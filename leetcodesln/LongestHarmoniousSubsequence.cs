@@ -10,11 +10,10 @@ namespace leetcodesln
         public int FindLHS(int[] nums)
         {
             var excemption = new List<int>();
-            var containTable = new HashSet<int>();
             var maxlength = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                if (containTable.Contains(nums[i])) continue;
+                if (excemption.Contains(nums[i])) continue;
                 if (nums.Contains(nums[i] - 1))
                 {
                     var min = nums[i] - 1;
@@ -25,10 +24,10 @@ namespace leetcodesln
                         if (min <= nums[j] && nums[j] <= max)
                         {
                             localmax++;
-                            excemption.Add(nums[j]);
+                            
                         }
-                        if (excemption.Contains(nums[j] - 1) && excemption.Contains(nums[j] + 1)) containTable.Add(nums[j]);
                     }
+                    excemption.Add(nums[i]);
                     maxlength = maxlength > localmax ? maxlength : localmax;
                 }
                 if (nums.Contains(nums[i] + 1))
@@ -41,10 +40,10 @@ namespace leetcodesln
                         if (min <= nums[j] && nums[j] <= max)
                         {
                             localmax++;
-                            excemption.Add(nums[j]);
+                            
                         }
-                        if (excemption.Contains(nums[j] - 1) && excemption.Contains(nums[j] + 1)) containTable.Add(nums[j]);
                     }
+                    excemption.Add(nums[i]);
                     maxlength = maxlength > localmax ? maxlength : localmax;
                 }
             }
