@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln
 {
@@ -8,38 +7,65 @@ namespace leetcodesln
     {
         public int[] RearrangeBarcodes(int[] barcodes)
         {
+            var dict = new Dictionary<int, int>();
             for (int i = 0; i < barcodes.Length; i++)
             {
-                if (i - 1 >= 0 && barcodes[i] != barcodes[i - 1] || i - 1 < 0) continue;
-                else if(i == barcodes.Length -1)
+                if (dict.ContainsKey(barcodes[i])) dict[barcodes[i]]++;
+                else dict.Add(barcodes[i], 1);
+            }
+
+            var ans = new int[barcodes.Length];
+            Array.Fill(ans, int.MaxValue);
+            bool front = true;
+
+            while(dict.Count!=0)
+            {
+                var max = -1;
+                var maxKv = default(KeyValuePair<int, int>);
+                foreach (var kv in dict)
                 {
-                    for (int j = i - 1; j >= 0; j--)
+                    if(kv.Value > max)
                     {
-                        if (barcodes[i] == barcodes[j]) i = j;
-                        else if(barcodes[j]!=barcodes[i])
+                        maxKv = kv;
+                        max = kv.Value;
+                    }
+                }
+
+                int count = maxKv.Value;
+                int elem = maxKv.Key;
+                dict.Remove(elem);
+                if (front)
+                {
+                    for (int j = 0; j < ans.Length && count != 0; j++)
+                    {
+                        if (ans[j] != int.MaxValue) continue;
+                        else
                         {
-                            var temp = barcodes[j];
-                            barcodes[j] = barcodes[i];
-                            barcodes[i] = temp;
-                            break;
+                            ans[j] = elem;
+                            count--;
+                            j++;
                         }
                     }
+                    front = false;
                 }
                 else
                 {
-                    for (int j = i+1; j < barcodes.Length; j++)
+                    for (int i = ans.Length - 1; i >= 0 && count != 0; i--)
                     {
-                        if(barcodes[j]!= barcodes[i])
+                        if (ans[i] != int.MaxValue) continue;
+                        else
                         {
-                            var temp = barcodes[j];
-                            barcodes[j] = barcodes[i];
-                            barcodes[i] = temp;
-                            break;
+                            ans[i] = elem;
+                            count--;
+                            i--;
                         }
+                        front = true;
                     }
                 }
             }
-            return barcodes;
+
+
+            return ans;
         }
     }
 }

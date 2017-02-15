@@ -29,7 +29,7 @@ namespace leetcodesln_test
         [TestMethod, Timeout(20_000)]
         public void TestMethod2()
         {
-            var input = new int[] { 4,3,8,4,4,4,8,3,3,3 };
+            var input = new int[] { 4, 3, 8, 4, 4, 4, 8, 3, 3, 3 };
             var actual = DistantBarcodes.RearrangeBarcodes(input);
             for (int i = 1; i < actual.Length; i++)
             {
@@ -40,7 +40,7 @@ namespace leetcodesln_test
         [TestMethod, Timeout(20_000)]
         public void TestMethod3()
         {
-            var input = new int[] { 1,1,1,1,2,2,3,3 };
+            var input = new int[] { 1, 1, 1, 1, 2, 2, 3, 3 };
             var actual = DistantBarcodes.RearrangeBarcodes(input);
             for (int i = 1; i < actual.Length; i++)
             {
