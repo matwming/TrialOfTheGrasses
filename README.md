@@ -25,6 +25,8 @@
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./leetcodesln/TwoSumII.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C#](./leetcodesln/KthLargestElementInAnArray.cs) | Medium | `Sorting`, `Priority Queue` | O(NLogK) | O(1) |
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C#](./leetcodesln/ReverseVowelsOfAString.cs) | Easy | `Two Pointers` | O(n) | O(1) |
+| 347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C#](./leetcodesln/TopKFrequentElements.cs) | Medium | `Bucket Sort` | O(n) | O(n) |
+| 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | [C#](./leetcodesln/SortCharactersByFrequency.cs) | Medium | `Bucket Sort` | O(n) | O(n) |
 | 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) | [C#](./leetcodesln/LongestWordInDictionaryThroughDeleting.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [C#](./leetcodesln/SumOfSquareNumbers.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [C#](./leetcodesln/ValidPalindromeII.cs) | Easy | `Two Pointers`  | O(n) | O(1) | 
@@ -34,6 +36,7 @@
 ### Two Pointers
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
+| 75 | `:star:` [Sort Colors](https://leetcode.com/problems/sort-colors/) | | Medium | `Two Pointers` | O(n) | O(1) | 
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./leetcodesln/MergeSortedArray.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./leetcodesln/LinkedListCycle.cs) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./leetcodesln/TwoSumII.cs) | Easy | `Two Pointers` | O(n) | O(1) |
@@ -46,3 +49,5 @@
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C#](./leetcodesln/KthLargestElementInAnArray.cs) | Medium | `Sorting`, `Priority Queue` | O(NLogK) | O(1) |
+| 347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C#](./leetcodesln/TopKFrequentElements.cs) | Medium | `Bucket Sort` | O(n) | O(n) |
+| 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | [C#](./leetcodesln/SortCharactersByFrequency.cs) | Medium | `Bucket Sort` | O(n) | O(n) |
