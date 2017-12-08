@@ -6,6 +6,10 @@
     <IsPackable>false</IsPackable>
 
     <StartupObject>leetcodesln.Program</StartupObject>
+
+    <AssemblyName>leetcodesln</AssemblyName>
+
+    <RootNamespace>leetcodesln</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
