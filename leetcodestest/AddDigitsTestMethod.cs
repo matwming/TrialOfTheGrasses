@@ -7,7 +7,7 @@ namespace leetcodestest
     public class AddDigitsTest
     {
         [TestMethod]
-        public void AddDigitssTestMethod()
+        public void AddDigitsTestMethod()
         {
             AddDigits addDigits = new AddDigits();
             Assert.AreEqual(2, addDigits.AddDigitsMethod(38));
