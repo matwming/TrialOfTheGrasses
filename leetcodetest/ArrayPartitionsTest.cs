@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace leetcodetest
+namespace leetcodetest.ArrayPartitionsTest
 {
     [TestClass]
     public class ArrayPartitionsTest
