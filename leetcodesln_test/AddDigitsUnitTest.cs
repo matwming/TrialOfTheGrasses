@@ -10,7 +10,7 @@ namespace leetcodesln_test
         public void AddDigitsMethodTest()
         {
             AddDigits addDigits = new AddDigits();
-            Assert.AreEqual(2,addDigits.AddDigitsMethod(38));
+            Assert.AreEqual(2, addDigits.AddDigitsMethod(38));
         }
     }
 }
