@@ -1,7 +1,7 @@
 using leetcodesln;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace leetcodetest
+namespace leetcodetest.AddDigitsTest
 {
     [TestClass]
     public class AddDigitsTest
