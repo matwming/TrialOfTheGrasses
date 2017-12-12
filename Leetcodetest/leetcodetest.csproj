@@ -5,11 +5,11 @@
 
     <IsPackable>false</IsPackable>
 
-    <StartupObject>leetcodesln.Program</StartupObject>
+    <StartupObject></StartupObject>
 
-    <AssemblyName>leetcodesln</AssemblyName>
+    <AssemblyName>leetcodetest</AssemblyName>
 
-    <RootNamespace>leetcodesln</RootNamespace>
+    <RootNamespace>leetcodetest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

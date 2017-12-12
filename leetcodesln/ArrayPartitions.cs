@@ -16,7 +16,7 @@ namespace leetcodesln
                 list.Add(nums[i]);
             }
             list.Sort();
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < list.Count; i+=2)
             {
                 sum += list[i];
             }
