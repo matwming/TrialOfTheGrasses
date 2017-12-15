@@ -6,7 +6,7 @@ using System.Text;
 
 namespace leetcodesln_test
 {
-    [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
+    [TestClass]
     public class HammingDistanceUnitTest
     {
         [TestMethod]

@@ -16,6 +16,7 @@ namespace leetcodesln
                     continue;
                 }
                 var temp = new List<int>();
+                //Array.ForEach<T>(T[] array, Action<T> action)
                 Array.ForEach(i.ToString().ToCharArray(), x=> temp.Add(int.Parse(x.ToString())));
                 bool flag = true;
                 foreach (var item in temp)
