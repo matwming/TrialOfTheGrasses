@@ -11,6 +11,7 @@ namespace leetcodesln_test
         {
             MinimumMovesToEqualArrayElements minimumMovesToEqualArrayElements = new MinimumMovesToEqualArrayElements();
             Assert.AreEqual(3,minimumMovesToEqualArrayElements.MinMoves(new int[]{1,2,3}));
+            Assert.AreEqual(2147483646,minimumMovesToEqualArrayElements.MinMoves(new int[]{1,2147483647}));
         }
     }
 }
