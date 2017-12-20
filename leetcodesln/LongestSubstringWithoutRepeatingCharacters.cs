@@ -24,12 +24,21 @@ namespace leetcodesln
                 }
                 else
                 {
-                    while (queue.Peek() != s[i])
+                    if (queue.Peek() == s[i])
                     {
                         queue.Dequeue();
-                        count--;
+                        queue.Enqueue(s[i]);
                     }
-
+                    else
+                    {
+                        while (queue.Peek() != s[i])
+                        {
+                            queue.Dequeue();
+                            count--;
+                        }
+                        queue.Dequeue();
+                        queue.Enqueue(s[i]);
+                    }
                 }
             }
             return maxCount;
