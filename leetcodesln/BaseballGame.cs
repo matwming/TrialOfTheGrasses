@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln
 {
@@ -11,8 +10,7 @@ namespace leetcodesln
             Stack<int> pointStack = new Stack<int>();
             foreach (var item in ops)
             {
-                int n;
-                if (int.TryParse(item, out n))
+                if (int.TryParse(item, out int n))
                 {
                     pointStack.Push(n);
                 }
@@ -27,7 +25,7 @@ namespace leetcodesln
                 }
                 else if ("D".Equals(item))
                 {
-                    pointStack.Push(pointStack.Peek()*2);
+                    pointStack.Push(pointStack.Peek() * 2);
                 }
                 else if ("C".Equals(item))
                 {
