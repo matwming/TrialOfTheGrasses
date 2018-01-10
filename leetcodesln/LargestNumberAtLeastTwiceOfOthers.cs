@@ -6,6 +6,10 @@ namespace leetcodesln
     {
         public int DominantIndex(int[] nums)
         {
+            if (nums.Length==1)
+            {
+                return 0;
+            }
             int[] numsCopy = new int[nums.Length];
             for (int i = 0; i < nums.Length; i++)
             {

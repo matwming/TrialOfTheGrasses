@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leetcodesln", "leetcodesln\leetcodesln.csproj", "{346503D3-B160-40D0-BFC5-381322983FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leetcodesln", "leetcodesln\leetcodesln.csproj", "{346503D3-B160-40D0-BFC5-381322983FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leetcodesln_test", "leetcodesln_test\leetcodesln_test.csproj", "{4FA63EF5-1AAC-4046-AB92-BF8EEBF8519A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leetcodesln_test", "leetcodesln_test\leetcodesln_test.csproj", "{4FA63EF5-1AAC-4046-AB92-BF8EEBF8519A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
