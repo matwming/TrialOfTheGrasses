@@ -4,14 +4,31 @@
     {
         public char NextGreatestLetter(char[] letters, char target)
         {
-            foreach (var letter in letters)
+            //foreach (var letter in letters)
+            //{
+            //    if (letter-target>0)
+            //    {
+            //        return letter;
+            //    }
+            //}
+            //return letters[0];
+            int length = letters.Length;
+            int low = 0;
+            int high = length;
+
+            while (low<high)
             {
-                if (letter-target>0)
+                int mid = low + (high - low) / 2;
+                if (letters[mid]>target)
                 {
-                    return letter;
+                    high = mid;
+                }
+                else
+                {
+                    low = mid + 1;
                 }
             }
-            return letters[0];
+            return letters[low % length];
         }
     }
 }
