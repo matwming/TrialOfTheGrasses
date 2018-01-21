@@ -18,27 +18,15 @@ namespace leetcodesln
     {
         public int SumOfLeftLeavesSln(TreeNode root)
         {
-            return ProcessNode(root);
-           
-        }
+            if (root.left)
+            {
 
+            }
+        }
+            
         private int ProcessNode(TreeNode node)
         {
-            int res = 0;
-            if (node==null)
-            {
-                return res;
-            }
-            else if (node.left==null && node.right==null)
-            {
-                res += node.val;
-            }
-            else
-            {
-                ProcessNode(node.left);
-                ProcessNode(node.right);
-            }
-            return res;
+
         }
     }
 }
