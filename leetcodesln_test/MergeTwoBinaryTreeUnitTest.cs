@@ -71,8 +71,7 @@ namespace leetcodesln_test
                         right = null
                     }
                 }
-            };
-           
+            };        
         }
     }
 }
