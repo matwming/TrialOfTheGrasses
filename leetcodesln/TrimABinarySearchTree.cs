@@ -10,11 +10,11 @@
             }
             if (root.val > R)
             {
-                return TrimBST(root.right, L, R);
+                return TrimBST(root.left, L, R);
             }
             if (root.val < L)
             {
-                return TrimBST(root.left, L, R);
+                return TrimBST(root.right, L, R);
             }
 
             root.left = TrimBST(root.left, L, R);
