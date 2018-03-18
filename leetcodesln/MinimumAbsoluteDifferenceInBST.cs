@@ -32,3 +32,5 @@ namespace leetcodesln
         }
     }
 }
+
+// passed
