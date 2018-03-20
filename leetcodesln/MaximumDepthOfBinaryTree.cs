@@ -14,15 +14,15 @@ namespace leetcodesln
             {
                 return 0;
             }
-            GetNodeDepth(root, currentDpeth, ref list);
-            if (root.left != null)
-            {
-                GetNodeDepth(root.left, currentDpeth, ref list);
-            }
-            if (root.right != null)
-            {
-                GetNodeDepth(root.right, currentDpeth, ref list);
-            }
+            //GetNodeDepth(root, currentDpeth, ref list);
+            //if (root.left != null)
+            //{
+            //    GetNodeDepth(root.left, currentDpeth, ref list);
+            //}
+            //if (root.right != null)
+            //{
+            //    GetNodeDepth(root.right, currentDpeth, ref list);
+            //}
         }
 
         private void GetNodeDepth(TreeNode node, int preDepth, ref List<int> list)
@@ -30,7 +30,7 @@ namespace leetcodesln
             if (node != null)
             {
                 GetNodeDepth(node.left, preDepth, ref list);
-            }
+            } 
         }
     }
 }
