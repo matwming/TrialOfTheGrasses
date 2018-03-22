@@ -8,29 +8,28 @@ namespace leetcodesln
     {
         public int MaxDepth(TreeNode root)
         {
-            List<int> list = new List<int>();
-            int currentDpeth = 0;
             if (root == null)
             {
                 return 0;
             }
-            //GetNodeDepth(root, currentDpeth, ref list);
-            //if (root.left != null)
-            //{
-            //    GetNodeDepth(root.left, currentDpeth, ref list);
-            //}
-            //if (root.right != null)
-            //{
-            //    GetNodeDepth(root.right, currentDpeth, ref list);
-            //}
-        }
 
-        private void GetNodeDepth(TreeNode node, int preDepth, ref List<int> list)
+            List<int> listOfDepths = new List<int>();
+            InOrderTraversal(root, ref listOfDepths, 1);
+
+            listOfDepths.Sort();
+            listOfDepths.Reverse();
+            return listOfDepths[0];
+        } 
+        
+        private void InOrderTraversal(TreeNode node, ref List<int> list, int currentDepth)
         {
-            if (node != null)
+            if (node == null)
             {
-                GetNodeDepth(node.left, preDepth, ref list);
-            } 
+                return;
+            }
+            InOrderTraversal(node.left, ref list, currentDepth + 1);
+            list.Add(currentDepth);
+            InOrderTraversal(node.right, ref list, currentDepth + 1);
         }
     }
 }
