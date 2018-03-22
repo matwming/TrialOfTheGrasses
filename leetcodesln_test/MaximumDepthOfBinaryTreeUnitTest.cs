@@ -1,12 +1,9 @@
 ﻿using leetcodesln;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln_test
 {
-    [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
+    [TestClass]
     public class MaximumDepthOfBinaryTreeUnitTest
     {
         [TestMethod]
