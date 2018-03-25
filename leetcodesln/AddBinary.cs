@@ -69,7 +69,12 @@ namespace leetcodesln
                 {
                     bb = (int)(b[b.Length - i] - '0');
                 }
-                if (aa + bb + carry >=2)
+                if (aa + bb + carry > 2)
+                {
+                    sb.Append(1);
+                    carry = 1;
+                }
+                else if (aa + bb + carry == 2)
                 {
                     sb.Append(0);
                     carry = 1;
