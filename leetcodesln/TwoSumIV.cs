@@ -8,37 +8,37 @@ namespace leetcodesln
     {
         public bool FindTarget(TreeNode root, int k)
         {
-            if (root == null) 
-            {
-                return false;
-            }
-
-            if (Math.Abs(root.val -k) >= root.val)
-            {
-                return FindRecursively(root.right, Math.Abs(root.val - k));
-            }
-            return FindRecursively(root.left, Math.Abs(root.val - k));
+            return DepthFirstSearch(root, root, k);
         }
 
-        private bool FindRecursively(TreeNode node, int target)
+        private bool DepthFirstSearch(TreeNode root, TreeNode current, int diff)
         {
-            if (node == null)
+            if (current == null)
             {
                 return false;
             }
-            if (node.val == target)
+            return Search(root, current, diff - current.val) || DepthFirstSearch(root, current.left, diff) || DepthFirstSearch(root, current.right, diff);
+        }
+
+        private bool Search(TreeNode root, TreeNode current, int diff)
+        {
+            if (root == null)
+            {
+                return false;
+            }
+            else if (root.val == diff && root != current)
             {
                 return true;
             }
-            if (node.val > target)
+            else if (diff > root.val)
             {
-                return FindRecursively(node.left, target);
+                return Search(root.right, current, diff);
             }
-            if (node.val < target)
+            else if (diff < root.val)
             {
-                return FindRecursively(node.right, target);
+                return Search(root.left, current, diff);
             }
-            return false;
+            else return false;
         }
     }
 }
