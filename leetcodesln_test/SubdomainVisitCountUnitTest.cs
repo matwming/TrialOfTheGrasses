@@ -13,7 +13,12 @@ namespace leetcodesln_test
         public void SubdomainVisitCountTestMethod()
         {
             SubdomainVisitCount sdbc = new SubdomainVisitCount();
-            Assert.AreEqual(null, sdbc.SubdomainVisits(new string[]{ "900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"}));
+            var result = sdbc.SubdomainVisits(new string[]{ "9001 discuss.leetcode.com"});
+            string[] excepted = { "9001 discuss.leetcode.com", "9001 leetcode.com", "9001 com" };
+            for (int i = 0; i < excepted.Length; i++)
+            {
+                Assert.AreEqual(excepted[i], result[i]);
+            }
         }
     }
 }
