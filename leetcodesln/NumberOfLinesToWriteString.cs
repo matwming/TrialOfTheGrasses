@@ -4,26 +4,22 @@ namespace leetcodesln
     {
         public int[] NumberOfLines(int[] widths, string S)
         {
-            int allWidths = 0;
-
-            for (int i = 0; i < S.Length -1; i++)
+            const int LINE = 100;
+            int line = 1;
+            int position = 0;
+            for (int i = 0; i < S.Length; i++)
             {
-                allWidths += widths[S[i] - 'a'];
+                if (LINE - position < widths[S[i]-'a'])
+                {
+                    line ++;
+                    position = widths[S[i] - 'a'];
+                }
+                else
+                {
+                    position += widths[S[i]-'a'];
+                }
             }
-            int carry = 0;
-            int position;
-            int lines = allWidths / 100;
-            if ((100 - (allWidths % 100)) >= (widths[S[S.Length -1] - 'a']))
-            {
-                position = allWidths % 100 + (widths[S[S.Length -1] - 'a']);
-                carry++;
-            }
-            else
-            {
-                position = widths[S[S.Length -1] - 'a'];
-                carry += 2;
-            }
-            return new int[] {lines + carry, position};
+            return new int[] {line, position};
         }
     }
     
