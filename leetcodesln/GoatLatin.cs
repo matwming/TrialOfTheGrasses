@@ -3,7 +3,7 @@ public class GoatLatin
 {
     public string ToGoatLatin(string S)
     {
-        string[] words = S.Split(" ");
+        string[] words = S.Split(' ');
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
         for (int i = 0; i < words.Length; i++)
         {
