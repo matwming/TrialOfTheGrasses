@@ -19,8 +19,14 @@ namespace leetcodesln_test
 
             //case 2
             int expected2 = 3;
-            int acutal = lp.FindLongestPalindrome("ccc");
-            Assert.AreEqual(expected2, actual);
+            int actual2 = lp.FindLongestPalindrome("ccc");
+            Assert.AreEqual(expected2, actual2);
+
+            //case 3
+            string input = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+            int expected3 = 983;
+            int actual3 = lp.FindLongestPalindrome(input);
+            Assert.AreEqual(expected3, actual3);
         }
     }
 }

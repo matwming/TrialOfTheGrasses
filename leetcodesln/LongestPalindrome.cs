@@ -17,6 +17,10 @@ namespace leetcodesln
                 {
                     longestPalindrome += item.Value;
                 }
+                else if (item.Value % 2 >= 1)
+                {
+                    longestPalindrome += item.Value - 1;
+                }
             }
             if (longestPalindrome < s.Length)
             {
