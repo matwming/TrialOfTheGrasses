@@ -6,6 +6,8 @@ namespace leetcodesln
 {
     public class ConstructStringFromBinaryTree
     {
+
+        //todo: runtime error
         public string Tree2Str(TreeNode t)
         {
             return PreOrder(t, new StringBuilder()).ToString();
@@ -17,7 +19,7 @@ namespace leetcodesln
             {
                 sb.Append(t.val);
             }
-            if (t.left!=null || t.right!=null)
+            if (t.left!=null)
             {
                 sb.Append("(");
                 PreOrder(t.left, sb);
@@ -25,6 +27,10 @@ namespace leetcodesln
             }
             if (t.right!=null)
             {
+                if (t.left == null)
+                {
+                    sb.Append("()");
+                }
                 sb.Append("(");
                 PreOrder(t.right, sb);
                 sb.Append(")");
