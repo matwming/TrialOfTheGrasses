@@ -7,7 +7,6 @@ namespace leetcodesln
     public class ConstructStringFromBinaryTree
     {
 
-        //todo: runtime error input : 1,2,3,null,4
         public string Tree2Str(TreeNode t)
         {
             return PreOrder(t, new StringBuilder()).ToString();
