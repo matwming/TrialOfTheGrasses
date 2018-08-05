@@ -4,6 +4,7 @@ using System.Text;
 
 namespace leetcodesln
 {
+    // this is a AC solution
     public class LemonadeChange
     {
         public bool LemonadeChangeSln(int[] bills)
