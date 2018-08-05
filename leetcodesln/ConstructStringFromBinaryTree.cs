@@ -9,6 +9,10 @@ namespace leetcodesln
 
         public string Tree2Str(TreeNode t)
         {
+            if (t==null)
+            {
+                return "";
+            }
             return PreOrder(t, new StringBuilder()).ToString();
         }
 
