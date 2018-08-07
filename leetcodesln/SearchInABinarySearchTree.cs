@@ -24,7 +24,6 @@ namespace leetcodesln
             {
                 return SearchBST(root.right, val);
             }
-            return null;
         }
     }
 }
