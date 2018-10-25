@@ -16,13 +16,14 @@ namespace leetcodesln
                 {
                     tail = GetLetterPositionIndex(S, tail);
                     res_arr[tail] = S[i];
+                    tail--;
                 }
                 else
                 {
                     res_arr[i] = S[i];
                 }
             }
-            return res_arr.ToString();
+            return new string(res_arr);
         }
 
         private int GetLetterPositionIndex(string S, int index)
@@ -31,7 +32,7 @@ namespace leetcodesln
             {
                 return index;
             }
-            return GetLetterPositionIndex(S, index--);
+            return GetLetterPositionIndex(S, --index);
         }
     }
 }
