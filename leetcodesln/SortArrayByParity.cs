@@ -1,4 +1,6 @@
-public class SortArrayByParity
+namespace leetcodesln
+{
+    public class SortArrayByParity
 {
     public int[] SortArrayByParitySln(int[] A) 
     {
@@ -18,4 +20,5 @@ public class SortArrayByParity
         }
         return result;    
     }
+}
 }
