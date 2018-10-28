@@ -1,6 +1,7 @@
+using leetcodesln;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace leetcodesln
+namespace leetcodesln_test
 {
     [TestClass]
     public class BinaryGapUnitTest
