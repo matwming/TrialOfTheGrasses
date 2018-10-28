@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Text;
 
 namespace leetcodesln
@@ -8,21 +9,35 @@ namespace leetcodesln
     {
         public int FindLongestBinaryGap(int N)
         {
-            Stack stack = new Stack();
-
-            while(N > 0)
+            var list = new List<int>();
+            while(N>0)
             {
-                stack.Push((char)N%2);
+                list.Add(N%2);
                 N = N/2;
             }
-
-            char[] binary = new char[stack.Count];
-            for (int i = 0; i < binary.Length; i++)
+            int max = 0;
+            for (int i = 0; i < list.Count; i++)
             {
-                binary[i] = (char)stack.Pop();
+                if (list[i] ==1)
+                {
+                    var dist = 0;
+                    for (int j = i+1; j < list.Count; j++)
+                    {
+                        if (list[j]==0)
+                        {
+                            dist+=1;
+                            max = dist> max? dist:max;
+                        }
+                        if (list[j] ==1)
+                        {
+                            dist+=1;
+                            max = dist> max? dist: max;
+                            break;
+                        }
+                    }
+                }
             }
-            
-            return 0;
+            return max;
         }
     }
 }
