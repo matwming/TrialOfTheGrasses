@@ -1,4 +1,6 @@
-﻿namespace leetcodesln
+﻿using leetcodesln.common;
+
+namespace leetcodesln
 {
     public class SameTree
     {
