@@ -8,46 +8,29 @@ namespace leetcodesln
     {
         public string[] UncommonFromSentences(string A, string B)
         {
-            var list_a = A.Split(' ').ToList();
-            foreach (var str in list_a)
+            string[] sumlist = (A + " " + B).Split(' ');
+            var dict = new Dictionary<string, int>();
+            foreach (var str in sumlist)
             {
-                list_a = RemoveDuplicates(list_a, str);
-            }
-
-            var list_b = B.Split(' ').ToList();
-
-            foreach (var str in list_b)
-            {
-                list_b = RemoveDuplicates(list_b, str);
-            }
-
-            foreach (var str in list_a)
-            {
-                if (list_b.Contains(str))
+                if (dict.ContainsKey(str))
                 {
-                    list_b.Remove(str);
+                    dict[str]++;
                 }
                 else
                 {
-                    list_b.Add(str);
+                    dict.Add(str, 1);
                 }
             }
 
-           
-            return list_b.ToArray();
-        }
-
-        private List<string> RemoveDuplicates(IList<string> list, string item)
-        {
-            var temp = list.ToList();
-            temp.Remove(item);
-            if (temp.Contains(item))
+            var reslist = new List<string>();
+            foreach (var item in dict)
             {
-                temp.Remove(item);
-                list = temp;
-                RemoveDuplicates(list, item);
+                if (item.Value<=1)
+                {
+                    reslist.Add(item.Key);
+                }
             }
-            return (List<string>)list;
-        }
+            return reslist.ToArray();
+        } 
     }
 }
