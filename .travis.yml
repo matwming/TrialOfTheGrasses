@@ -4,7 +4,7 @@ dotnet: 2.1.105
 
 install:
 - dotnet restore
-- dotnet tool install -g coveralls.net --version 1.0.0
+- dotnet add package coveralls.io --version 1.4.2
 
 script:
 - dotnet build
