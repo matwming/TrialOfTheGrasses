@@ -1,0 +1,10 @@
+language: csharp
+mono: none
+dotnet: 2.1.500-preview-009335
+
+install:
+- dotnet restore
+
+script:
+- dotnet build
+- dotnet test leetcodesln_test/leetcodesln_test.csproj
