@@ -7,7 +7,7 @@ namespace leetcodesln
     {
         public int MaxProfit(int[] prices)
         {
-            if(prices.Length == 0 || prices.Length ==1) return 0;
+            if(prices.Length < 2) return 0;
             int maxProfit = 0;
             int currentMax = prices[prices.Length-1];
             for (int i = prices.Length -2 ; i >= 0; i--)
