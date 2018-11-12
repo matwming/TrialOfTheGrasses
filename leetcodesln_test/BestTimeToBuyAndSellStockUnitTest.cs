@@ -19,6 +19,11 @@ namespace leetcodesln_test
             var expected2 = 0;
             var actual2 = bestTimeToBuyAndSellStock.MaxProfit(input2);
             Assert.AreEqual(expected2, actual2);
+
+            var input3 = new int[] {};
+            var expected3 = 0;
+            var actual3 = bestTimeToBuyAndSellStock.MaxProfit(input3);
+            Assert.AreEqual(expected3, actual3);
         }
     }
 }
