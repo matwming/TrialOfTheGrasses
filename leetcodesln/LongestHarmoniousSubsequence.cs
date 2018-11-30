@@ -9,45 +9,27 @@ namespace leetcodesln
     {
         public int FindLHS(int[] nums)
         {
-            var excemption = new List<int>();
-            var maxlength = 0;
-            for (int i = 0; i < nums.Length; i++)
+            var max = 0;
+            var dict = new Dictionary<int, int>();
+            foreach (var num in nums)
             {
-                if (excemption.Contains(nums[i])) continue;
-                if (nums.Contains(nums[i] - 1))
+                if(dict.ContainsKey(num))
                 {
-                    var min = nums[i] - 1;
-                    var max = nums[i];
-                    var localmax = 0;
-                    for (int j = i; j < nums.Length; j++)
-                    {
-                        if (min <= nums[j] && nums[j] <= max)
-                        {
-                            localmax++;
-                            
-                        }
-                    }
-                    excemption.Add(nums[i]);
-                    maxlength = maxlength > localmax ? maxlength : localmax;
+                    dict[num]++;
                 }
-                if (nums.Contains(nums[i] + 1))
+                else
                 {
-                    var min = nums[i];
-                    var max = nums[i]+1;
-                    var localmax = 0;
-                    for (int j = i; j < nums.Length; j++)
-                    {
-                        if (min <= nums[j] && nums[j] <= max)
-                        {
-                            localmax++;
-                            
-                        }
-                    }
-                    excemption.Add(nums[i]);
-                    maxlength = maxlength > localmax ? maxlength : localmax;
+                    dict.Add(num, 1);
                 }
             }
-            return maxlength;
+            foreach (var d in dict)
+            {
+                if(dict.ContainsKey(d.Key+1))
+                {
+                    max = max > (d.Value + dict[d.Key + 1]) ? max : (d.Value + dict[d.Key + 1]);
+                }
+            }
+            return max;
         }
     }
 }
