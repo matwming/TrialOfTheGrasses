@@ -8,17 +8,20 @@ namespace leetcodesln
     {
         public int MaxSubArray(int[] nums)
         {
-            if (nums.Length == 1) return nums[0];
-            var max = int.MinValue;
-            var tempsum = nums[0];
+            var max = nums[0];
+            var pre = nums[0];
+
             for (int i = 1; i < nums.Length; i++)
             {
-                tempsum += nums[i];
-                if(tempsum >= max)
+                if(pre < 0)
                 {
-                    max = tempsum > nums[i]? tempsum : nums[i];
-                    tempsum = max;
+                    pre = nums[i];
                 }
+                else
+                {
+                    pre = pre + nums[i];
+                }
+                    max = max > pre ? max : pre;
             }
             return max;
         }
