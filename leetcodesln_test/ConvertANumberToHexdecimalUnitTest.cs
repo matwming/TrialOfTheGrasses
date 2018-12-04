@@ -25,5 +25,41 @@ namespace leetcodesln_test
             var actual = convertANumberToHexdecimal.ToHex(input);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(10_000)]
+        public void ConvertANumberToHexdecimalTestMethod2()
+        {
+            var input = -1;
+            var expected = "ffffffff";
+            var actual = convertANumberToHexdecimal.ToHex(input);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod, Timeout(10_000)]
+        public void ConvertANumberToHexdecimalTestMethod3()
+        {
+            var input = 12;
+            var expected = "c";
+            var actual = convertANumberToHexdecimal.ToHex(input);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod, Timeout(10_000)]
+        public void ConvertANumberToHexdecimalTestMethod4()
+        {
+            var input = 0;
+            var expected = "0";
+            var actual = convertANumberToHexdecimal.ToHex(input);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod, Timeout(10_000)]
+        public void ConvertANumberToHexdecimalTestMethod5()
+        {
+            var input = -123;
+            var expected = "ffffff85";
+            var actual = convertANumberToHexdecimal.ToHex(input);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

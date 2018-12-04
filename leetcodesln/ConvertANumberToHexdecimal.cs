@@ -9,80 +9,16 @@ namespace leetcodesln
     {
         public string ToHex(int num)
         {
-            var sb = new StringBuilder();
-            if(num >= 0)
+            if (num == 0) return "0";
+            uint unum = (uint)num;
+            var map = new char[] {'0', '1','2', '3','4','5','6','7','8','9','a','b','c','d','e','f'};
+            var s = string.Empty;
+            while(unum!=0)
             {
-                while(num % 16 > 0)
-                {
-                    var remain = num % 16;
-                    num = num / 16;
-                    switch (remain)
-                    {
-                        case 10:
-                            sb.Append("a");
-                            break;
-                        case 11:
-                            sb.Append("b");
-                            break;
-                        case 12:
-                            sb.Append("c");
-                            break;
-                        case 13:
-                            sb.Append("d");
-                            break;
-                        case 14:
-                            sb.Append("e");
-                            break;
-                        case 15:
-                            sb.Append("f");
-                            break;
-                        default:
-                            sb.Append(remain);
-                            break;
-                    }
-                }
+                s = map[unum & 15] + s;
+                unum = (unum >> 4);
             }
-            else
-            {
-                num = -num;
-                while (num % 16 > 0)
-                {
-                    var remain = num % 16;
-                    num = num / 16;
-                    switch (remain)
-                    {
-                        case 10:
-                            sb.Append("a");
-                            break;
-                        case 11:
-                            sb.Append("b");
-                            break;
-                        case 12:
-                            sb.Append("c");
-                            break;
-                        case 13:
-                            sb.Append("d");
-                            break;
-                        case 14:
-                            sb.Append("e");
-                            break;
-                        case 15:
-                            sb.Append("f");
-                            break;
-                        default:
-                            sb.Append(remain);
-                            break;
-                    }
-                }
-                var chrarr = sb.ToString().ToCharArray();
-                Array.Reverse(chrarr);
-
-                chrarr.Select(c => 15 - c).ToArray();
-
-            }
-            var charArr = sb.ToString().ToCharArray();
-            Array.Reverse(charArr);
-            return new string(charArr);
+            return s;
         }
     }
 }
