@@ -5,7 +5,7 @@ using System.Text;
 
 namespace leetcodesln
 {
-    public class ConvertANumberToHexdecimal
+    public class ConvertANumberToHexadecimal
     {
         public string ToHex(int num)
         {
