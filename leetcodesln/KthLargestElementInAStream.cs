@@ -17,11 +17,8 @@ namespace leetcodesln
             {
                 if(minHeap.GetSize() >= k)
                 {
-                    if(minHeap.Peek() <= num)
-                    {
-                        minHeap.Poll();
                         minHeap.Add(num);
-                    }
+                        minHeap.Poll();
                 }
                 else
                 {
@@ -34,11 +31,12 @@ namespace leetcodesln
         {
             if (minHeap.GetSize() >= K)
             {
-                if (minHeap.Peek() <= val)
-                {
-                    minHeap.Poll();
-                    minHeap.Add(val);
-                }
+                minHeap.Add(val);
+                minHeap.Poll();
+            }
+            else
+            {
+                minHeap.Add(val);
             }
             return minHeap.Peek();
         }
@@ -105,7 +103,7 @@ namespace leetcodesln
             T removed_data = heap[v];
             Swap(v, heapSize);
 
-            heap.Remove(heap[heapSize]);
+            heap.RemoveAt(heapSize);
             MapRemove(removed_data, heapSize);
 
             if (v == heapSize) return removed_data;
@@ -136,15 +134,7 @@ namespace leetcodesln
         {
             if (element == null) return;
 
-            if (heapSize < heapCapacity)
-            {
-                heap.Add(element);
-            }
-            else
-            {
-                heap.Add(element);
-                heapCapacity++;
-            }
+            heap.Add(element);
 
             MapAdd(element, heapSize);
 
