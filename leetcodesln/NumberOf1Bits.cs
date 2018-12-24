@@ -6,46 +6,34 @@ namespace leetcodesln
 {
     public class NumberOf1Bits
     {
+        Dictionary<uint, int> map = new Dictionary<uint, int>
+        {
+            [0] = 0,
+            [1] = 1,
+            [2] = 1,
+            [3] = 2,
+            [4] = 1,
+            [5] = 2,
+            [6] = 2,
+            [7] = 3,
+            [8] = 1,
+            [9] = 2,
+            [10] = 2,
+            [11] = 3,
+            [12] = 2,
+            [13] = 3,
+            [14] = 3,
+            [15] =4
+        };
         public int HammingWeight(uint n)
         {
             var countOf1s = 0;
 
             while(n !=0)
             {
-                uint x = (n & 15);
-                switch (x)
-                {
-                    case 1:
-                    case 2:
-                    case 4:
-                    case 8:
-                        countOf1s++;
-                        n = (n >> 4);
-                        break;
-                    case 3:
-                    case 5:
-                    case 6:
-                    case 9:
-                    case 10:
-                    case 12:
-                        countOf1s += 2;
-                        n = (n >> 4);
-                        break;
-                    case 7:
-                    case 11:
-                    case 13:
-                    case 14:
-                        countOf1s += 3;
-                        n = (n >> 4);
-                        break;
-                    case 15:
-                        countOf1s += 4;
-                        n = (n >> 4);
-                        break;
-                    default:
-                        n = (n >> 4);
-                        break;
-                }
+                var x = (n & 15);
+                countOf1s += map[x];
+                n = (n >> 4);
             }
             return countOf1s;
         }
