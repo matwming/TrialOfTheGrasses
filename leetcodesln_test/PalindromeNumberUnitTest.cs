@@ -22,5 +22,14 @@ namespace leetcodesln_test
             var actual = palindromeNumber.IsPalindrome(input);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void PalindromeNumberTestMethod2()
+        {
+            var input = 0;
+            var expected = true;
+            var actual = palindromeNumber.IsPalindrome(input);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
