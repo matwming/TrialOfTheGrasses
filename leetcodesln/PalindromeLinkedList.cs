@@ -6,41 +6,33 @@
         {
             if (head == null || head.next == null) return true;
 
-            var explorer = head.next.next;
+            var explorer = head;
+            var newHead = default(ListNode);
 
-            if (explorer == null) return head.val == head.next.val;
-
-            var left = head;
-            ListNode right = null;
-
-
-
-            while (explorer.next != null)
+            while (explorer != null)
             {
-                if (explorer.next.next != null)
+                if (explorer.next == null)
                 {
-                    left = left.next;
-                    right = left.next.next;
-                    explorer = explorer.next.next;
+                    head = head.next;
+                    break;
                 }
                 else
                 {
-                    left = left.next;
-                    right = left.next;
-                    explorer = explorer.next;
+                    explorer = explorer.next.next;
                 }
 
-
+                var next = head.next;
+                head.next = newHead;
+                newHead = head;
+                head = next;
             }
 
-
-
-            while (right != null)
+            while (newHead != null)
             {
-                if (right.val == left.val)
+                if (newHead.val == head.val)
                 {
-                    right = right.next;
-                    left = left.next;
+                    newHead = newHead.next;
+                    head = head.next;
                 }
                 else return false;
             }
