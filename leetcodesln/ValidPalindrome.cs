@@ -26,10 +26,6 @@
                         return false;
                     }
                 }
-                else
-                {
-                    break;
-                }
             }
             return true;
         }
