@@ -22,7 +22,7 @@ namespace leetcodesln
 
             var boundary = (int)Math.Floor(Math.Sqrt(num)); // Math.Floor return the largest integral value less than or equal to the specified number
 
-            for (int i = 3; i <= boundary; i += 2)
+            for (int i = 3; i <= boundary; i += 2) //only check odd numbers
             {
                 if (num % i == 0) return false;
             }
