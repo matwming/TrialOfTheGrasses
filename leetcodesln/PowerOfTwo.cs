@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace leetcodesln
 {
@@ -14,10 +13,10 @@ namespace leetcodesln
             var list = new List<int>();
             uint un = (uint)n;
 
-            while(un !=0)
+            while (un != 0)
             {
                 if (poss.Contains((int)(un & 15))) list.Add(1);
-                else if((un & 15) == 0)
+                else if ((un & 15) == 0)
                 {
 
                 }
@@ -29,5 +28,12 @@ namespace leetcodesln
             }
             return list.Count == 1;
         }
+
+
+        // concise solution
+        //public bool IsPowerOfTwo(int n)
+        //{
+        //    return (n > 0) && ((n & (n - 1)) == 0);
+        //}
     }
 }
