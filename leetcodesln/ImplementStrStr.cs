@@ -7,78 +7,33 @@ namespace leetcodesln
     {
         public int StrStr(string haystack, string needle)
         {
-            if (string.IsNullOrEmpty(needle)) throw new NullReferenceException();
-
-            var h = haystack.Length;
-            var n = needle.Length;
-
-            if(h < n) return -1;
-            if(h == n && haystack == needle) return 0;
-
-            int[] kmpArray = new int[n];
-            List<int> matchedIndex = new List<int>();
-
-            FormPrefixTable(needle, ref kmpArray);
-
-            int i = 0, j = 0;
-
-            while (i < h)
+            var hLen = haystack.Length;
+            var nLen = needle.Length;
+        
+            if(nLen > hLen || (nLen==hLen && haystack!=needle)) return -1;
+            if(string.IsNullOrEmpty(needle)) return 0;
+            
+        
+            for(int i=0; i< hLen; i++)
             {
-                if (haystack[i] == needle[j])
+                if(haystack[i]==needle[0])
                 {
-                    i++;
-                    j++;
-                }
+                    bool notFound = false;
+                    for(int j=0, q=i; j < nLen; j++, q++)
+                    {
+                        if(j> nLen-1) return -1;
+                        
+                        if(haystack[q]!= needle[j])
+                        {
+                            notFound = true;
+                            break;
+                        }
+                    }
 
-                //match found at i-j
-                if (j == n)
-                {
-                    matchedIndex.Add(i-j);
-                    j = kmpArray[j-1];
-                }
-                else if (i < h && haystack[i] != needle[j])
-                {
-                    if(j != 0)
-                    {
-                        j = kmpArray[j-1];
-                    }
-                    else
-                    {
-                        i++;
-                    }
+                    if(!notFound) return i;
                 }
             }
             return -1;
         }
-
-        private void FormPrefixTable(string pattern, ref int[] kmpArray)
-        {
-            int pLen = pattern.Length;
-            int len = 0;
-            kmpArray[0] = 0;
-            int i = 1;
-
-            while (i < pLen)
-            {
-                if (pattern[i] == pattern[len])
-                {
-                    len++;
-                    kmpArray[i] = len;
-                    i++;
-                }
-                else
-                {
-                    if (len == 0)
-                    {
-                        kmpArray[i] = 0;
-                        i++;
-                    }
-                    else
-                    {
-                        len = kmpArray[len -1];
-                    }
-                }
-            }
-        }
-    }   
+    }
 }
