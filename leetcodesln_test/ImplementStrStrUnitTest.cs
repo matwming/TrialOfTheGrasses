@@ -69,7 +69,7 @@ namespace leetcodesln_test
         {
             var haystack = "mississippi";
             var needle = "issipi";
-            var expected = 4;
+            var expected = -1;
             var actual = implementStrStr.StrStr(haystack, needle);
             Assert.AreEqual(expected,actual);
         }
