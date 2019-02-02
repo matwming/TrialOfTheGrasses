@@ -5,21 +5,17 @@ public class LicenseKeyFormatting
     {
         var cleanStr = S.Replace("-", string.Empty);
         char[] strarr = new char[(cleanStr.Length-1) / K + cleanStr.Length];
-        var cleanStrEndPtr = strarr.Length-1;
         var i = cleanStr.Length -1;
-        while(i>=0)
+        var arrPtr = strarr.Length -1;
+        while (i >=0)
         {
-            int counter = 0;
-            while (counter <= K-1)
+            int count = 1;
+            while (count <= K && i >=0)
             {
-                strarr[cleanStrEndPtr] = char.ToUpper(cleanStr[i - counter]);
-                counter++;
-                cleanStrEndPtr--;
+                strarr[arrPtr--] = char.ToUpper(cleanStr[i--]);
+                count++;
             }
-            i = i - counter;
-            if(i < 0) break;
-            strarr[cleanStrEndPtr] = '-';
-            cleanStrEndPtr--;
+            if(i >= 0) strarr[arrPtr--] = '-';
         }
         return new string(strarr);
     }
