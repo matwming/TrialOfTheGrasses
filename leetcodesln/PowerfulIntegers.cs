@@ -7,7 +7,7 @@ namespace leetcodesln
     {
         public IList<int> PowerfulIntegersSln(int x, int y, int bound)
         {
-            if(x+y > bound) return new List<int>();
+            if(bound < 2) return new List<int>();
 
             var resultList = new List<int>();
 
