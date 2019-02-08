@@ -2,6 +2,7 @@ using System;
 
 namespace leetcodesln
 {
+    //TODO: use sliding window algorithm to optimise
     public class MaximumAverageSubarrayI
     {
         public double FindMaxAverage(int[] nums, int k)
