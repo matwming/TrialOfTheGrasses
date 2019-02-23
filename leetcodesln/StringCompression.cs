@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace leetcodesln
 {
+    //TODO: Could you solve it using only O(1) extra space?
     public class StringCompression
     {
         public int Compress(char[] chars)
