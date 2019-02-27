@@ -49,5 +49,23 @@ namespace leetcodesln_test
             var actual = AvailableCapturesForRook.NumRookCaptures(board);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            var board = new char[8][];
+            board[0] = new char[] { '.', '.', '.', '.', '.', '.', '.', '.' };
+            board[1] = new char[] { '.', '.', '.', 'p', '.', '.', '.', '.' };
+            board[2] = new char[] { '.', '.', '.', 'p', '.', '.', '.', '.' };
+            board[3] = new char[] { 'p', 'p', '.', 'R', '.', 'p', 'B', '.' };
+            board[4] = new char[] { '.', '.', '.', '.', '.', '.', '.', '.' };
+            board[5] = new char[] { '.', '.', '.', 'B', '.', '.', '.', '.' };
+            board[6] = new char[] { '.', '.', '.', 'p', '.', '.', '.', '.' };
+            board[7] = new char[] { '.', '.', '.', '.', '.', '.', '.', '.' };
+
+            var expected = 3;
+            var actual = AvailableCapturesForRook.NumRookCaptures(board);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

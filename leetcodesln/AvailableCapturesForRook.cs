@@ -1,5 +1,3 @@
-using System;
-
 namespace leetcodesln
 {
     public class AvailableCapturesForRook
@@ -13,9 +11,9 @@ namespace leetcodesln
             {
                 for (int j = 0; j < board[i].Length; j++)
                 {
-                    if(board[i][j] == 'R')
+                    if (board[i][j] == 'R')
                     {
-                        cord = (i,j);
+                        cord = (i, j);
                         break;
                     }
                 }
@@ -27,13 +25,62 @@ namespace leetcodesln
 
         private void Captured(ref int captured, (int x, int y) cord, char[][] board)
         {
-            if(board[cord.x][cord.y] == 'B') return;
-            if(board[cord.x][cord.y] == 'p') captured++;
+            GoUp(ref captured, cord, board);
+            GoDown(ref captured, cord, board);
+            GoLeft(ref captured, cord, board);
+            GoRight(ref captured, cord, board);
+        }
 
-            if(cord.x -1 > 0 && cord.y >0 && cord.y < board.Length) Captured(ref captured, (cord.x -1, cord.y), board);
-            if(cord.x + 1 < board[0].Length && cord.y >0 && cord.y < board.Length) Captured(ref captured, (cord.x + 1, cord.y), board);
-            if(cord.y -1 > 0 && cord.x > 0 && cord.x< board[0].Length) Captured(ref captured, (cord.x, cord.y -1) , board);
-            if(cord.y + 1 < board.Length && cord.x > 0 && cord.x < board[0].Length) Captured(ref captured, (cord.x, cord.y+1), board);
+        private void GoLeft(ref int captured, (int x, int y) cord, char[][] board)
+        {
+            if (cord.x < 0) return;
+            if (board[cord.x][cord.y] == 'B') return;
+            if (board[cord.x][cord.y] == 'p')
+            {
+                captured++;
+                return;
+            }
+
+            GoLeft(ref captured, (cord.x - 1, cord.y), board);
+        }
+
+        private void GoRight(ref int captured, (int x, int y) cord, char[][] board)
+        {
+            if (cord.x >= board[0].Length) return;
+            if (board[cord.x][cord.y] == 'B') return;
+            if (board[cord.x][cord.y] == 'p')
+            {
+                captured++;
+                return;
+            }
+
+            GoRight(ref captured, (cord.x + 1, cord.y), board);
+        }
+
+        private void GoUp(ref int captured, (int x, int y) cord, char[][] board)
+        {
+            if (cord.y >= board.Length) return;
+            if (board[cord.x][cord.y] == 'B') return;
+            if (board[cord.x][cord.y] == 'p')
+            {
+                captured++;
+                return;
+            }
+
+            GoUp(ref captured, (cord.x, cord.y + 1), board);
+        }
+
+        private void GoDown(ref int captured, (int x, int y) cord, char[][] board)
+        {
+            if (cord.y < 0) return;
+            if (board[cord.x][cord.y] == 'B') return;
+            if (board[cord.x][cord.y] == 'p')
+            {
+                captured++;
+                return;
+            }
+
+            GoDown(ref captured, (cord.x, cord.y - 1), board);
         }
     }
 }
