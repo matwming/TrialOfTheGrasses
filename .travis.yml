@@ -10,3 +10,9 @@ install:
 script:
 - dotnet build
 - dotnet test leetcodesln_test/leetcodesln_test.csproj
+
+notifications:
+  email:
+    recipients:
+      - stan_gai@Hotmail.com
+    on_failure: always #default:always

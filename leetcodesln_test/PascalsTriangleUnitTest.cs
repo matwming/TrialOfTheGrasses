@@ -23,7 +23,7 @@ namespace leetcodesln_test
             expected[1] = new int[] { 1, 1 };
             expected[2] = new int[] { 1, 2, 1 };
             expected[3] = new int[] { 1, 3, 3, 1 };
-            expected[4] = new int[] { 1, 4, 6, 4 };
+            expected[4] = new int[] { 1, 4, 6, 4, 1 };
             var actual = PascalsTriangle.Generate(numRows);
             for (int i = 0; i < expected.Length; i++)
             {
