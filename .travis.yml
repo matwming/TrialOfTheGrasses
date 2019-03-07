@@ -15,4 +15,5 @@ notifications:
   email:
     recipients:
       - stan_gai@Hotmail.com
+    on_success: never #default: change
     on_failure: always #default:always
