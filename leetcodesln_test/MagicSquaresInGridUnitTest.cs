@@ -52,5 +52,18 @@ namespace leetcodesln_test
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod4()
+        {
+            var input = new int[3][];
+            input[0] = new int[] { 1, 8, 6 };
+            input[1] = new int[] { 10, 5, 0 };
+            input[2] = new int[] { 4, 2, 9 };
+            var expected = 0;
+            int actual = MagicSquaresInGrid.NumMagicSquaresInside(input);
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
