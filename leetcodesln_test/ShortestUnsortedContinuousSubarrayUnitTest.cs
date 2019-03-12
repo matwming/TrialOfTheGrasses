@@ -31,5 +31,14 @@ namespace leetcodesln_test
             var actual = ShortestUnsortedContinuousSubarray.FindUnsortedSubarray(input);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod3()
+        {
+            var input = new int[] {1,2,3,4 };
+            var expected = 0;
+            var actual = ShortestUnsortedContinuousSubarray.FindUnsortedSubarray(input);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
