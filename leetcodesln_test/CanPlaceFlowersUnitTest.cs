@@ -73,5 +73,25 @@ namespace leetcodesln_test
             var actual = CanPlaceFlowers.CanPlaceFlowersSln(flowerbed, n);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod7()
+        {
+            var flowerbed = new int[] { 1, 0, 0, 0, 0, 1 };
+            var n = 2;
+            var expected = false;
+            var actual = CanPlaceFlowers.CanPlaceFlowersSln(flowerbed, n);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod8()
+        {
+            var flowerbed = new int[] { 1, 0, 0, 0, 1 };
+            var n = 1;
+            var expected = true;
+            var actual = CanPlaceFlowers.CanPlaceFlowersSln(flowerbed, n);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
