@@ -40,5 +40,14 @@ namespace leetcodesln_test
             var actual = ThirdMaximumNumber.ThirdMax(input);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod4()
+        {
+            var input = new int[] { 5, 2, 2 };
+            var expected = 5;
+            var actual = ThirdMaximumNumber.ThirdMax(input);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
