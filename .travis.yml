@@ -20,3 +20,4 @@ notifications:
 
   # skip some particular commits
   [update readme skip]
+  [notbuild* skip]
