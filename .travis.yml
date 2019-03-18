@@ -17,3 +17,6 @@ notifications:
       - stan_gai@Hotmail.com
     on_success: never #default: change
     on_failure: always #default:always
+
+  # skip some particular commits
+  [update readme skip]
