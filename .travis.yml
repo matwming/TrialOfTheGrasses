@@ -18,6 +18,7 @@ notifications:
     on_success: never #default: change
     on_failure: always #default:always
 
-  # skip some particular commits
+  # skip some particular commits with the following keywords eg: [<keywords> skip] 
+  # or you can add [ci skip] into your commit's message eg: git commit -m "readme update [ci skip]"
   [update readme skip]
   [notbuild* skip]
