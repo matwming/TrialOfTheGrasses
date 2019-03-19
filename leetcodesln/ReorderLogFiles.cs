@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace leetcodesln
 {
@@ -6,64 +7,58 @@ namespace leetcodesln
     {
         public string[] ReorderLogFilesSln(string[] logs)
         {
-            string[] result = new string[logs.Length];
-
-            var letterLogsList = new List<string>();
-            var digitLogsList = new List<string>();
+            var letterlist = new List<string>();
+            var digitlist = new List<string>();
 
             foreach (var log in logs)
             {
-                if (char.IsNumber(log.Split(' ')[1][0])) digitLogsList.Add(log);
-                else letterLogsList.Add(log);
+                if (char.IsNumber(log.Split(' ')[1][0])) digitlist.Add(log);
+                else letterlist.Add(log);
             }
 
-            string[] letterArray = letterLogsList.ToArray();
-
-            BubbleSortLetterLogs(ref letterArray);
-            for (int i = 0; i < letterArray.Length; i++)
+            var i = 0;
+            while (letterlist.Count != 0)
             {
-                result[i] = letterArray[i];
+                logs[i++] = GetMin(ref letterlist);
             }
-
-            var list_ptr = 0;
-            for (int i = letterArray.Length; i < result.Length; i++)
+            foreach (var dig in digitlist)
             {
-                result[i] = digitLogsList[list_ptr++];
+                logs[i++] = dig;
             }
-            return result;
+            return logs;
+
         }
 
-        private void BubbleSortLetterLogs(ref string[] letterArray)
+        private string GetMin(ref List<string> letterlist)
         {
-            for (int i = 0; i < letterArray.Length - 1; i++)
+            var min = letterlist.FirstOrDefault();
+
+            foreach (var letteritem in letterlist)
             {
-                for (int j = 0; j < letterArray.Length - 1 - i; j++)
+
+                if (!Comp(min, letteritem))
                 {
-                    if (Comp(letterArray[j], letterArray[j + 1]))
-                    {
-                        var temp = letterArray[j + 1];
-                        letterArray[j + 1] = letterArray[j];
-                        letterArray[j] = temp;
-                    }
+                    min = letteritem;
                 }
             }
+            letterlist.Remove(min);
+            return min;
+
         }
 
-        private bool Comp(string v1, string v2)
+        private bool Comp(string max, string newlet)
         {
-            string[] v1s = v1.Split(' ');
-            string[] v2s = v2.Split(' ');
+            var i = 0;
+            max = max.Remove(0, max.IndexOf(' ') + 1);
+            newlet = newlet.Remove(0, newlet.IndexOf(' ') + 1);
 
-            var i = 1;
-            while (i < v1s.Length && i < v2s.Length)
+            while (i < max.Length && i < newlet.Length)
             {
-                for (int j = 0; j < v1s[i].Length && i < v2s[i].Length; j++)
-                {
-                    if (v1s[i][j] > v2s[i][j]) return true;
-                    else return false;
-                }
+                if (max[i] < newlet[i]) return true;
+                else if (max[i] > newlet[i]) return false;
+                i++;
             }
-            return false;
+            return true;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace leetcodesln_test
         public void TestMethod2()
         {
             var input = new string[] { "j mo", "5 m w", "g 07", "o 2 0", "t q h" };
-            var expected = new string[] { "j mo", "5 m w", "t q h", "g 07", "o 2 0" };
+            var expected = new string[] { "5 m w", "j mo", "t q h", "g 07", "o 2 0"};
             var actual = ReorderLogFiles.ReorderLogFilesSln(input);
 
             for (int i = 0; i < actual.Length; i++)
