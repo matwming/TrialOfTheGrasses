@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace leetcodesln
@@ -10,7 +9,7 @@ namespace leetcodesln
     {
         public string MostCommonWordSln(string paragraph, string[] banned)
         {
-            var fixinput = Regex.Replace(paragraph, "[^a-zA-Z0-9% ._]", " ");
+            var fixinput = Regex.Replace(paragraph, "[,.?!;\"\']", " ");
             var tempo = new Regex("[ ]{2,}", RegexOptions.None).Replace(fixinput, " ");
             var wordDict = new Dictionary<string, int>();
             string[] words = tempo.Split(" ");
