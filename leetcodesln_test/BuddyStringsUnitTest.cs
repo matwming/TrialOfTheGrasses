@@ -63,5 +63,25 @@ namespace leetcodesln_test
             var actual = BuddyStrings.BuddyStringsSln(A, B);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod6()
+        {
+            var A = "abcd";
+            var B = "badc";
+            var expected = false;
+            var actual = BuddyStrings.BuddyStringsSln(A, B);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod7()
+        {
+            var A = "abcaa";
+            var B = "abcbb";
+            var expected = false;
+            var actual = BuddyStrings.BuddyStringsSln(A, B);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

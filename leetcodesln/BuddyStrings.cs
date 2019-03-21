@@ -1,4 +1,4 @@
-using System;
+using System.Collections.Generic;
 
 namespace leetcodesln
 {
@@ -8,32 +8,34 @@ namespace leetcodesln
         {
             if (A.Length != B.Length) return false;
 
-            bool isChecked = false;
-            int sum = 0;
-
-            for (int i = 0; i < A.Length; i++)
+            if (A == B && A.Length >= 2)
             {
-                if (!isChecked)
+                var dict = new Dictionary<char, int>();
+                foreach (var chr in A)
                 {
-                    if (A[i] != B[i])
+                    if (dict.ContainsKey(chr))
                     {
-                        sum += A[i];
-                        sum += B[i];
-                        isChecked = true;
+                        return true;
                     }
+                    else dict.Add(chr, 1);
                 }
-                if (isChecked)
-                {
-                    if (A[i] != B[i])
-                    {
-                        sum -= A[i];
-                        sum -= B[i];
-                        break;
-                    }
-                }
+                return false;
 
             }
-            return isChecked && sum == 0;
+            else
+            {
+                var list = new List<char>();
+
+                for (int i = 0; i < A.Length; i++)
+                {
+                    if (A[i] != B[i])
+                    {
+                        list.Add(A[i]);
+                        list.Add(B[i]);
+                    }
+                }
+                return list.Count == 4 && list[1] == list[2] && list[0] == list[3];
+            }
         }
     }
 }
