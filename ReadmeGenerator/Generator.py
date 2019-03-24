@@ -1,13 +1,14 @@
 import requests
 import json
+import os
 
 from pathlib import Path
 # request api
 API_ENDPOINT = 'https://www.leetcode.com/api/problems/algorithms/'
 
 
-HOMEPATH = Path.cwd()
-CookiePath = Path.joinpath(HOMEPATH, 'ReadmeGenerator', 'cookie.json')
+HOMEPATH = os.getcwd()
+CookiePath = os.path.join(HOMEPATH, 'cookie.json')
 
 cookie = ''
 with open(CookiePath) as cookie_json:
