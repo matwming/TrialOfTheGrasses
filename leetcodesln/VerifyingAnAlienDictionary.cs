@@ -4,34 +4,32 @@
     {
         public bool IsAlienSorted(string[] words, string order)
         {
-            var dict = new int[256];
+            var dict = new int[26];
             for (int i = 0; i < order.Length; i++)
             {
-                dict[order[i]] = i;
+                dict[order[i] - 'a'] = i;
             }
 
-            for (int i = words.Length - 1; i > 0; i--)
+            for (int i = 1; i < words.Length; i++)
             {
-                if (CompareTwo(words[i], words[i - 1], ref dict)) continue;
-                else return false;
+                if (CompareTwo(words[i], words[i - 1]) < 0) return false;
             }
             return true;
-        }
 
-        private bool CompareTwo(string right, string left, ref int[] dict)
-        {
-
-            for (int i = 0; i <= (left.Length >= right.Length ? left.Length - 1 : right.Length - 1); i++)
+            int CompareTwo(string right, string left)
             {
-                if (i >= left.Length) return true;
-                if (i < right.Length && i < left.Length && dict[right[i]] > dict[left[i]]) return true;
-                else if (i < right.Length && i < left.Length && dict[right[i]] == dict[left[i]])
+                var rLen = right.Length;
+                var lLen = left.Length;
+                var dis = 0;
+
+                for (int l = 0, r = 0; l < lLen && r < rLen && dis == 0; l++, r++)
                 {
-                    continue;
+                    dis = dict[right[r] - 'a'] - dict[left[l] - 'a'];
                 }
-                else return false;
+                return dis == 0 ? rLen - lLen : dis;
             }
-            throw null;
         }
+
+
     }
 }
