@@ -10,8 +10,10 @@
  */
     public class RemoveLinkedListElements
     {
-#pragma warning disable
+
+#pragma warning disable IDE0051 // Remove unused private members
         private ListNode RemoveElements(ListNode head, int val)
+#pragma warning restore IDE0051 // Remove unused private members
         {
             var virtualStartNode = new ListNode(0)
             {
