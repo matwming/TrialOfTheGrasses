@@ -52,7 +52,7 @@ namespace leetcodesln
 
         /** one stack solution */
 
-        private Stack<StackNode> stack;
+        private readonly Stack<StackNode> stack;
         private int? CurrentMinimumValue { get; set; }
 
         public MinStack()

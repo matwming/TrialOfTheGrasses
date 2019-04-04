@@ -10,6 +10,7 @@
  */
     public class RemoveLinkedListElements
     {
+#pragma warning disable
         private ListNode RemoveElements(ListNode head, int val)
         {
             var virtualStartNode = new ListNode(0)
@@ -23,7 +24,7 @@
             {
                 if (nxt.val == val)
                 {
-                    cur.next = nxt.next == null ? null : nxt.next;
+                    cur.next = nxt.next ?? null;
                     nxt = nxt.next;
                 }
                 else
