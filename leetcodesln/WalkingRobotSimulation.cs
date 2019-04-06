@@ -64,10 +64,10 @@ namespace leetcodesln
                 switch (command)
                 {
                     case -2:
-                        CurrentDirection = "N";
+                        CurrentDirection = "S";
                         break;
                     case -1:
-                        CurrentDirection = "S";
+                        CurrentDirection = "N";
                         break;
                     default:
                         throw new ArgumentException();
@@ -78,10 +78,10 @@ namespace leetcodesln
                 switch (command)
                 {
                     case -2:
-                        CurrentDirection = "W";
+                        CurrentDirection = "E";
                         break;
                     case -1:
-                        CurrentDirection = "E";
+                        CurrentDirection = "W";
                         break;
                     default:
                         throw new ArgumentException();
