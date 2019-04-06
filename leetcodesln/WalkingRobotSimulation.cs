@@ -12,7 +12,7 @@ namespace leetcodesln
 
             foreach (var ob in obstacles)
             {
-                robot.Obstacles.Add((ob[0], ob[1]));
+                robot.Obstacles.Add((ob[0] + "," + ob[1]));
             }
 
             foreach (var command in commands)
@@ -22,7 +22,7 @@ namespace leetcodesln
                     var counter = 0;
                     while (counter < command)
                     {
-                        robot.Move();
+                        if (!robot.Move()) break;
                         var currentDistant = robot.Coordinate.x * robot.Coordinate.x + robot.Coordinate.y * robot.Coordinate.y;
                         maxEuclideanDistant = maxEuclideanDistant > currentDistant ? maxEuclideanDistant : currentDistant;
                         ++counter;
@@ -41,7 +41,7 @@ namespace leetcodesln
     {
         public string CurrentDirection { get; set; } = "N";
         public (int x, int y) Coordinate { get; set; } = (0, 0);
-        public List<(int x, int y)> Obstacles { get; set; } = new List<(int x, int y)>();
+        public HashSet<string> Obstacles { get; set; } = new HashSet<string>();
 
         public void ChangeDirection(int command)
         {
@@ -103,29 +103,30 @@ namespace leetcodesln
             }
         }
 
-        public void Move()
+        public bool Move()
         {
             switch (CurrentDirection)
             {
                 case "N":
-                    if (Obstacles.Contains((Coordinate.x, Coordinate.y + 1))) break;
+                    if (Obstacles.Contains(Coordinate.x + "," + (Coordinate.y + 1))) return false;
                     Coordinate = (Coordinate.x, Coordinate.y + 1);
                     break;
                 case "E":
-                    if (Obstacles.Contains((Coordinate.x + 1, Coordinate.y))) break;
+                    if (Obstacles.Contains((Coordinate.x + 1) + "," + Coordinate.y)) return false;
                     Coordinate = (Coordinate.x + 1, Coordinate.y);
                     break;
                 case "W":
-                    if (Obstacles.Contains((Coordinate.x - 1, Coordinate.y))) break;
+                    if (Obstacles.Contains((Coordinate.x - 1) + "," + Coordinate.y)) return false;
                     Coordinate = (Coordinate.x - 1, Coordinate.y);
                     break;
                 case "S":
-                    if (Obstacles.Contains((Coordinate.x, Coordinate.y - 1))) break;
+                    if (Obstacles.Contains(Coordinate.x + "," + (Coordinate.y - 1))) return false;
                     Coordinate = (Coordinate.x, Coordinate.y - 1);
                     break;
                 default:
                     throw new ArgumentException();
             }
+            return true;
         }
     }
 }
