@@ -14,33 +14,12 @@ namespace leetcodesln
 
             foreach (var query in queries)
             {
-                if ((A[query[1]] + query[0]) % 2 == 0)
-                {
-                    if (A[query[1]] % 2 == 0)
-                    {
-                        sum = sum + query[0];
-                        res[i++] = sum;
-                    }
-                    else
-                    {
-                        sum = sum + A[query[1]] + query[0];
-                        res[i++] = sum;
-                    }
-                }
-                else
-                {
-                    if (A[query[1]] % 2 == 0)
-                    {
-                        sum = sum - A[query[1]];
-                        res[i++] = sum;
-                    }
-                    else
-                    {
-                        res[i++] = sum;
-                    }
-                }
-                A[query[1]] += query[0];
-
+                var value = query[0];
+                var index = query[1];
+                if (A[index] % 2 == 0) sum -= A[index];
+                A[index] += value;
+                if (A[index] % 2 == 0) sum += A[index];
+                res[i++] = sum;
             }
             return res;
         }
