@@ -8,21 +8,20 @@ namespace leetcodesln_test.utils
         {
             if (arr1.Length != arr2.Length) return false;
 
-
-            var dict1 = new Dictionary<T, int>();
+            var dict = new Dictionary<T, int>();
 
             foreach (var item in arr1)
             {
-                if (dict1.ContainsKey(item)) ++dict1[item];
-                else dict1[item] = 1;
+                if (dict.ContainsKey(item)) ++dict[item];
+                else dict[item] = 1;
             }
 
             foreach (var item in arr2)
             {
-                if (dict1.ContainsKey(item))
+                if (dict.ContainsKey(item))
                 {
-                    --dict1[item];
-                    if (dict1[item] < 0) return false;
+                    --dict[item];
+                    if (dict[item] < 0) return false;
                 }
                 else return false;
             }
