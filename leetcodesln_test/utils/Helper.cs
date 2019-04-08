@@ -8,8 +8,8 @@ namespace leetcodesln_test.utils
         {
             if (arr1.Length != arr2.Length) return false;
 
+
             var dict1 = new Dictionary<T, int>();
-            var dict2 = new Dictionary<T, int>();
 
             foreach (var item in arr1)
             {
@@ -19,14 +19,14 @@ namespace leetcodesln_test.utils
 
             foreach (var item in arr2)
             {
-                if (dict2.ContainsKey(item)) ++dict2[item];
-                else dict2[item] = 1;
+                if (dict1.ContainsKey(item))
+                {
+                    --dict1[item];
+                    if (dict1[item] < 0) return false;
+                }
+                else return false;
             }
 
-            foreach (var item in dict2)
-            {
-                if (item.Value != dict1.GetValueOrDefault(item.Key)) return false;
-            }
             return true;
         }
     }
