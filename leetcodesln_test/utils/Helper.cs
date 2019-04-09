@@ -1,32 +1,43 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace leetcodesln_test.utils
 {
     internal static class Helper<T>
     {
-        public static bool HaveSameElementsForTwoArray(T[] arr1, T[] arr2)
+        public static bool HaveSameElementsForTwoCollections(IEnumerable<T> c1, IEnumerable<T> c2)
         {
-            if (arr1.Length != arr2.Length) return false;
+            if (GetLength(c1) != GetLength(c2)) return false;
 
             var dict = new Dictionary<T, int>();
 
-            foreach (var item in arr1)
+            var it1 = c1.GetEnumerator();
+            var it2 = c2.GetEnumerator();
+
+            while (it1.MoveNext())
             {
-                if (dict.ContainsKey(item)) ++dict[item];
-                else dict[item] = 1;
+                if (dict.ContainsKey(it1.Current)) ++dict[it1.Current];
+                else dict[it1.Current] = 1;
             }
 
-            foreach (var item in arr2)
+            while (it2.MoveNext())
             {
-                if (dict.ContainsKey(item))
+                if (dict.ContainsKey(it2.Current))
                 {
-                    --dict[item];
-                    if (dict[item] < 0) return false;
+                    --dict[it2.Current];
+                    if (dict[it2.Current] < 0) return false;
                 }
-                else return false;
             }
-
             return true;
+        }
+
+        private static int GetLength(IEnumerable<T> c)
+        {
+            Type type = c.GetType();
+
+            if (type.IsAssignableFrom(typeof(List<T>)) || type.IsAssignableFrom(typeof(IList<T>))) return ((IList<T>)c).Count;
+            else if (type.IsAssignableFrom(typeof(T[]))) return ((T[])c).Length;
+            else throw new NotSupportedException();
         }
     }
 }

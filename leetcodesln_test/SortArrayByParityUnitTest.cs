@@ -14,7 +14,7 @@ namespace leetcodesln_test
             var input = new int[] { 3, 1, 2, 4 };
             var expected = new int[] { 2, 4, 1, 3 };
             var actual = sortArrayByParity.SortArrayByParitySln(input);
-            Assert.IsTrue(Helper<int>.HaveSameElementsForTwoArray(expected, actual));
+            Assert.IsTrue(Helper<int>.HaveSameElementsForTwoCollections(expected, actual));
         }
     }
 }
