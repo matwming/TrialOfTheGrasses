@@ -1,47 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace leetcodesln
+﻿namespace leetcodesln
 {
     public class MonotonicArray
     {
+        //two pass
+        //public bool IsMonotonic(int[] A)
+        //{
+        //    return IsDecreasing(A) || IsIncreasing(A);
+        //}
+
+        //private bool IsIncreasing(int[] a)
+        //{
+        //    for (int i = 0; i < a.Length - 1; i++)
+        //    {
+        //        if (a[i] > a[i + 1]) return false;
+        //    }
+        //    return true;
+        //}
+
+        //private bool IsDecreasing(int[] a)
+        //{
+        //    for (int i = a.Length - 1; i >= 1; --i)
+        //    {
+        //        if (a[i] > a[i - 1]) return false;
+        //    }
+        //    return true;
+        //}
+
+        // one pass
         public bool IsMonotonic(int[] A)
         {
-            if (A.Length <= 1) return true;
+            int status = 0;
 
-            for (int i = 1; i < A.Length; i++)
+            for (int i = 0; i < A.Length - 1; ++i)
             {
-                if (A[i] - A[i]-1 ==0)
-                {
-                    continue;
-                }
-                else
-                {
-                    if (A[i] - A[i - 1] > 0)
-                    {
-                        for (int j = i + 1; j < A.Length; j++)
-                        {
-                            if (A[j] - A[j - 1] < 0)
-                            {
-                                return false;
-                            }
-                        }
 
-                    }
-                    else if (A[i] - A[i - 1] < 0)
-                    {
-                        for (int k = i + 1; k < A.Length; k++)
-                        {
-                            if (A[k] - A[k - 1] > 0)
-                            {
-                                return false;
-                            }
-                        }
-                    }
+                var sign = A[i].CompareTo(A[i + 1]);
+                if (sign != 0)
+                {
+                    if (sign != status && status != 0) return false;
+                    status = sign;
                 }
+
             }
-
             return true;
         }
     }
