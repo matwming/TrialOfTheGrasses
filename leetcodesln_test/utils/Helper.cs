@@ -37,7 +37,7 @@ namespace leetcodesln_test.utils
 
             if (type.IsAssignableFrom(typeof(List<T>)) || type.IsAssignableFrom(typeof(IList<T>))) return ((IList<T>)c).Count;
             else if (type.IsAssignableFrom(typeof(T[]))) return ((T[])c).Length;
-            else throw new NotSupportedException();
+            else throw new NotSupportedException($"The collection type: {type.Name} is not supported.");
         }
     }
 }
