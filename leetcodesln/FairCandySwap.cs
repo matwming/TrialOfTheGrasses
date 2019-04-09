@@ -7,8 +7,6 @@ namespace leetcodesln
     {
         public int[] FairSwap(int[] A, int[] B)
         {
-            var totalcandy = A.Sum() + B.Sum();
-            var fairnumber = totalcandy / 2;
             var suma = A.Sum();
             var sumb = B.Sum();
             foreach (var numa in A)
