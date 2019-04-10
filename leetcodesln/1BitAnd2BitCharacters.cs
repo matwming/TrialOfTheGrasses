@@ -5,26 +5,13 @@
         public bool IsOneBitCharacter(int[] bits)
         {
             int i = 0;
-            while (i<bits.Length-2)
+
+            while (i < bits.Length - 2)
             {
-                if (bits[i]==0)
-                {
-                    i++;
-                }
-                else
-                {
-                    i++;
-                    i++;
-                }
+                if (bits[i] == 1) i += 2;
+                else ++i;
             }
-            if (bits[i]==1)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return bits[i] == 0;
         }
     }
 }
