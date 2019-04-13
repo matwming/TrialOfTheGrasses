@@ -1,8 +1,7 @@
 ﻿using leetcodesln;
+using leetcodesln.common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln_test
 {
@@ -48,7 +47,7 @@ namespace leetcodesln_test
                     node3, node2,node4
                 }
             };
-            var expected = new List<int>{ 5,6,3,2,4,1};
+            var expected = new List<int> { 5, 6, 3, 2, 4, 1 };
             var actual = ntpt.Postorder(root);
             for (int i = 0; i < expected.Count; i++)
             {

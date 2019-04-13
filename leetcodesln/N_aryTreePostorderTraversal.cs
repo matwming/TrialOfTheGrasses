@@ -1,6 +1,5 @@
-﻿using System;
+﻿using leetcodesln.common;
 using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln
 {
@@ -27,19 +26,6 @@ namespace leetcodesln
                 }
             }
             list.Add(node.val);
-        }
-    }
-
-    public class Node
-    {
-        public int val;
-        public IList<Node> children;
-
-        public Node() { }
-        public Node(int _val, IList<Node> _children)
-        {
-            val = _val;
-            children = _children;
         }
     }
 }
