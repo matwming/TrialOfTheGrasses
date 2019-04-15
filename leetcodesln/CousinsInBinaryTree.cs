@@ -26,16 +26,16 @@ namespace leetcodesln
                         foundx = foundx || current.left.val == x;
                         q.Enqueue(current.left);
                         foundy = foundy || current.left.val == y;
-                        fatherx = foundx && foundx ? fatherx == null ? current : fatherx : null;
-                        fathery = foundy ? fathery == null ? current : fathery : null;
+                        fatherx = foundx && foundx ? fatherx ?? current : null;
+                        fathery = foundy ? fathery ?? current : null;
                     }
                     if (current.right != null)
                     {
                         foundx = foundx || current.right.val == x;
                         q.Enqueue(current.right);
                         foundy = foundy || current.right.val == y;
-                        fatherx = foundx && foundx ? fatherx == null ? current : fatherx : null;
-                        fathery = foundy ? fathery == null ? current : fathery : null;
+                        fatherx = foundx && foundx ? fatherx ?? current : null;
+                        fathery = foundy ? fathery ?? current : null;
                     }
                 }
                 if (foundx && foundy && fatherx != fathery && fatherx != null && fathery != null) return true;
