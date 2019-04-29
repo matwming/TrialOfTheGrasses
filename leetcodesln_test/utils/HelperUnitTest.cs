@@ -3,7 +3,7 @@
 namespace leetcodesln_test.utils
 {
     [TestClass]
-    public class MyTestClass
+    public class HelperUnitTest
     {
         [TestMethod, Timeout(20_000)]
         public void TestMethod1()
