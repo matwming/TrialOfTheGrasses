@@ -4,6 +4,14 @@ namespace leetcodesln
 {
     public class EscapeALargeMaze
     {
+
+        /// <summary>
+        ///  This is a correct solution but TLE, it has been proved using c++
+        /// </summary>
+        /// <param name="blocked"></param>
+        /// <param name="source"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public bool IsEscapePossible(int[][] blocked, int[] source, int[] target)
         {
             if (blocked.Length == 0) return true;
@@ -13,12 +21,12 @@ namespace leetcodesln
                 blockers.Add(b[0] + "," + b[1]);
             }
             var seen = new HashSet<string>();
-            return IsEscapePossibleBFS(blockers, source, target, seen) && IsEscapePossibleBFS(blockers, target, source, seen);
+            return IsEscapePossibleBFS(blockers, source, target, ref seen) && IsEscapePossibleBFS(blockers, target, source, ref seen);
         }
 
-        private bool IsEscapePossibleBFS(HashSet<string> blockers, int[] source, int[] target, HashSet<string> seen)
+        private bool IsEscapePossibleBFS(HashSet<string> blockers, int[] source, int[] target, ref HashSet<string> seen)
         {
-            if (target[0] < 0 || target[0] >= 1e6 || target[1] < 0 || target[1] >= 1e6) return false;
+            if (target[0] < 0 || target[1] < 0 || target[0] >= 1e6 || target[1] >= 1e6) return false;
 
             var dirs = new int[4][];
             dirs[0] = new int[] { 1, 0 };
