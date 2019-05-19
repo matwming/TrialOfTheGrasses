@@ -6,29 +6,47 @@ namespace leetcodesln
 {
     public class RemoveAllAdjacentDuplicatesInString
     {
+        //public string RemoveDuplicates(string S)
+        //{
+        //    var before = S;
+        //    var after = RemoveProcess(S);
+        //    while(before != after)
+        //    {
+        //        before = after;
+        //        after = RemoveProcess(after);
+                
+        //    }
+        //    return after;
+        //}
+
+        //private string RemoveProcess(string s)
+        //{
+        //    for (int i = 0; i < s.Length-1; i++)
+        //    {
+        //        if(s[i] == s[i+1])
+        //        {
+        //            return s.Remove(i, 2);
+        //        }
+        //    }
+        //    return s;
+        //}
+
+        // best solution using stack
         public string RemoveDuplicates(string S)
         {
-            var before = S;
-            var after = RemoveProcess(S);
-            while(before != after)
-            {
-                before = after;
-                after = RemoveProcess(after);
-                
-            }
-            return after;
-        }
+            var ans = string.Empty;
+            var stack = new Stack<char>();
 
-        private string RemoveProcess(string s)
-        {
-            for (int i = 0; i < s.Length-1; i++)
+            foreach (var chr in S)
             {
-                if(s[i] == s[i+1])
-                {
-                    return s.Remove(i, 2);
-                }
+
+                if (stack.Count != 0 && stack.Peek() == chr) stack.Pop();
+                else stack.Push(chr);
             }
-            return s;
+
+            while (stack.Count != 0) ans = stack.Pop() + ans;
+
+            return ans;
         }
     }
 }
