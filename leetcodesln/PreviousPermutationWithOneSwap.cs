@@ -4,30 +4,16 @@
     {
         public int[] PrevPermOpt1(int[] A)
         {
-            int maxIndex = A.Length -1;
-            int? index = null;
-            bool found = false;
-            for (int i = A.Length - 1; i > 0; i--)
-            {
-                if(A[i-1] >= A[i])
-                {
-                    maxIndex = A[maxIndex] > A[i] ? maxIndex : i;
-                    index = i - 1;
-                    found = true;
-                }
-                else
-                {
-                    if (!found) continue;
-                    else break;
-                }
-            }
-            if(found)
-            {
-                var temp = A[maxIndex];
-                A[maxIndex] = A[index.Value];
-                A[index.Value] = temp;
-            }
+            int s1 = A.Length - 1;
+            for (; s1 > 0 && A[s1] >= A[s1 - 1]; --s1) ;
+            if (s1 == 0) return A;
+            --s1;
 
+            int s2 = A.Length - 1;
+            for (; A[s2] >= A[s1] || A[s2]==A[s2-1]; --s2) ;   //找到第一个递增位之后从后面开始找最大的数（因为之前都是递减，所以找到第一个比第一递增位小的就可以交换）
+            var temp = A[s1];
+            A[s1] = A[s2];
+            A[s2] = temp;
             return A;
         }
     }
