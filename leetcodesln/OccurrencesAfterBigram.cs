@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 
 namespace leetcodesln
 {
@@ -8,9 +8,16 @@ namespace leetcodesln
         public string[] FindOcurrences(string text, string first, string second)
         {
             var ans = new List<string>();
-            List<string> words = text.Split(' ').ToList();
+            var words = text.Split(' ');
 
-            //TODO
+            var buffer = new StringBuilder();
+
+            for (int i = 0; i < words.Length - 2; i++)
+            {
+                buffer.Append(words[i]).Append(" ").Append(words[i + 1]);
+                if (buffer.ToString() == $"{first} {second}") ans.Add(words[i + 2]);
+                buffer = new StringBuilder();
+            }
             return ans.ToArray();
         }
     }
