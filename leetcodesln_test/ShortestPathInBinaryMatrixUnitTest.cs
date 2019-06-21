@@ -37,5 +37,17 @@ namespace leetcodesln_test
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod3()
+        {
+            var grid = new int[3][];
+            grid[0] = new int[] { 1, 0, 0 };
+            grid[1] = new int[] { 1, 1, 0 };
+            grid[2] = new int[] { 1, 1, 0 };
+            var expected = -1;
+            var actual = ShortestPathInBinaryMatrix.ShortestPathBinaryMatrix(grid);
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
