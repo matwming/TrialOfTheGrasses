@@ -17,16 +17,11 @@ namespace leetcodesln
             int mIdxL = 0;
             int mIdxR = 0;
 
-            var list = new List<int>();
 
             for (int i = 0; i < 255; i++)
             {
                 if (count[i] != 0)
                 {
-                    for (int j = 0; j < count[i]; j++)
-                    {
-                        list.Add(i);
-                    }
                     min = min == null ? i : (min < i ? min : i);
                     max = max == null ? i : (max > i ? max : i);
                     totalCount += count[i];
@@ -36,21 +31,45 @@ namespace leetcodesln
                         mode = i;
                         currentMostAppearTimes = count[i];
                     }
-                    if (totalCount % 2 == 0)
+                }
+            }
+
+            var curCount = 0;
+            if (totalCount % 2 == 0)
+            {
+                for (int i = 0; i < count.Length; i++)
+                {
+                    for (int j = 0; j < count[i]; j++)
                     {
-                        mIdxL = totalCount / 2 - 1;
-                        mIdxR = totalCount / 2;
-                    }
-                    else
-                    {
-                        mIdxL = mIdxR = totalCount / 2;
+                        curCount += 1;
+                        if (curCount == totalCount / 2) mIdxL = i;
+                        if (curCount == totalCount / 2+1)
+                        {
+                            mIdxR = i;
+                            break;
+                        }
                     }
 
                 }
             }
+            else
+            {
+                for (int i = 0; i < count.Length; i++)
+                {
+                    for (int j = 0; j < count[i]; j++)
+                    {
+                        curCount += 1;
+                        if (curCount == totalCount / 2)
+                        {
+                            mIdxL = mIdxR = i;
+                            break;
+                        }
+                    }
+                }
+            }
 
             double? mean = Math.Round((double)totalSum / totalCount, 5);
-            double? median = Math.Round((double)(list[mIdxL] + list[mIdxR]) / 2, 5);
+            double? median = Math.Round((double)(mIdxL + mIdxR) / 2, 5);
 
             return new double[] { min.Value, max.Value, mean.Value, median.Value, mode.Value };
         }
