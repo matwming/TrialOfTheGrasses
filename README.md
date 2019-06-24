@@ -1,4 +1,5 @@
 # leetcode Solutions
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e2bc6c8566214a5892de7398beeb84a4)](https://app.codacy.com/app/user3301/Leetcode?utm_source=github.com&utm_medium=referral&utm_content=user3301/Leetcode&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/user3301/Leetcode.svg?branch=master)](https://travis-ci.org/user3301/Leetcode)
 [![codebeat badge](https://codebeat.co/badges/f3f5e030-768e-4bb4-a855-705f2f090f8a)](https://codebeat.co/projects/github-com-user3301-leetcode-master)
 [![solved/total](https://leetcode-badge.chyroc.cn/?name=user3301)](https://leetcode.com/user3301/)
