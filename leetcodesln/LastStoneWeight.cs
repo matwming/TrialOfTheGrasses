@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace leetcodesln
 {
@@ -15,17 +13,17 @@ namespace leetcodesln
 
             foreach (var stone in stones)
             {
-                if (sortedDictionary.ContainsKey(stone)) sortedDictionary[stone]++;
+                if (sortedDictionary.ContainsKey(stone)) { sortedDictionary[stone]++; }
                 else sortedDictionary.Add(stone, 1);
             }
 
-            while(sortedDictionary.Count >= 2)
+            while (sortedDictionary.Count >= 2)
             {
                 var large = sortedDictionary.Last();
                 sortedDictionary.Remove(large.Key);
 
                 // if current max stones are even number, they will destroy each other, otherwise we need take out 
-                if(large.Value % 2 == 1)
+                if (large.Value % 2 == 1)
                 {
                     var next = sortedDictionary.Last();
                     if (next.Value == 1) sortedDictionary.Remove(next.Key);
@@ -36,7 +34,7 @@ namespace leetcodesln
                 }
             }
             var remain = sortedDictionary.First();
-            return remain.Value%2==0?0:remain.Key;
+            return remain.Value % 2 == 0 ? 0 : remain.Key;
         }
     }
 }

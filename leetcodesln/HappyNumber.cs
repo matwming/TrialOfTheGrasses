@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Globalization;
 
 namespace leetcodesln
 {
@@ -16,7 +16,7 @@ namespace leetcodesln
         {
             if (n == 1) return true;
 
-            var strnum = n.ToString();
+            var strnum = n.ToString("G", CultureInfo.CreateSpecificCulture("en-US"));
 
             double sum = 0;
             for (int i = 0; i < strnum.Length; i++)

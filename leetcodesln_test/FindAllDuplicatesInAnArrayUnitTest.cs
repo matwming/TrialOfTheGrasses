@@ -1,9 +1,6 @@
 ﻿using leetcodesln;
 using leetcodesln_test.utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln_test
 {
@@ -21,8 +18,8 @@ namespace leetcodesln_test
         [TestMethod, Timeout(20_000)]
         public void TestMethod1()
         {
-            var input = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
-            var expected = new int[] { 2, 3 };
+            var input = new[] { 4, 3, 2, 7, 8, 2, 3, 1 };
+            var expected = new[] { 2, 3 };
             var actual = FindAllDuplicatesInAnArray.FindDuplicates(input);
             Assert.IsTrue(Helper<int>.HaveSameElementsForTwoCollections(expected, actual));
         }
@@ -30,8 +27,8 @@ namespace leetcodesln_test
         [TestMethod, Timeout(20_000)]
         public void TestMethod2()
         {
-            var input = new int[] { 10, 2, 5, 10, 9, 1, 1, 4, 3, 7 };
-            var expected = new int[] { 10, 1 };
+            var input = new[] { 10, 2, 5, 10, 9, 1, 1, 4, 3, 7 };
+            var expected = new[] { 10, 1 };
             var actual = FindAllDuplicatesInAnArray.FindDuplicates(input);
             Assert.IsTrue(Helper<int>.HaveSameElementsForTwoCollections(expected, actual));
         }
@@ -39,8 +36,8 @@ namespace leetcodesln_test
         [TestMethod, Timeout(20_000)]
         public void TestMethod3()
         {
-            var input = new int[] { 2,2 };
-            var expected = new int[] { 2 };
+            var input = new[] { 2, 2 };
+            var expected = new[] { 2 };
             var actual = FindAllDuplicatesInAnArray.FindDuplicates(input);
             Assert.IsTrue(Helper<int>.HaveSameElementsForTwoCollections(expected, actual));
         }

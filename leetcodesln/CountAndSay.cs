@@ -15,7 +15,7 @@ namespace leetcodesln
 
         private string GetFinalLine(List<int> pre_list, int n)
         {
-            if (n == 0) return string.Join("", pre_list);
+            if (n == 0) { return string.Join("", pre_list); }
 
             var next_list = new List<int>();
 

@@ -18,7 +18,7 @@ namespace leetcodesln
             {
                 var complement = target - nums[i];
 
-                if (dict.ContainsKey(complement)) return new int[] { i, dict[complement] };
+                if (dict.ContainsKey(complement)) { return new[] { i, dict[complement] }; }
                 dict[nums[i]] = i;
             }
 

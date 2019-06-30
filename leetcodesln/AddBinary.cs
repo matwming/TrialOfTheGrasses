@@ -9,19 +9,19 @@ namespace leetcodesln
         {
             StringBuilder sb = new StringBuilder();
             int carry = 0;
-            for (int i = 1; i <= (a.Length > b.Length? a.Length: b.Length); i++)
+            for (int i = 1; i <= (a.Length > b.Length ? a.Length : b.Length); i++)
             {
 
                 int aa = 0;
                 int bb = 0;
                 if (a.Length - i >= 0)
                 {
-                    aa = (int)(a[a.Length - i] - '0');
+                    aa = a[a.Length - i] - '0';
                 }
-               
+
                 if (b.Length - i >= 0)
                 {
-                    bb = (int)(b[b.Length - i] - '0');
+                    bb = b[b.Length - i] - '0';
                 }
                 if (aa + bb + carry > 2)
                 {

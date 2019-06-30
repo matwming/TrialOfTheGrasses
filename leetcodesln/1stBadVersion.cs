@@ -22,9 +22,9 @@ namespace leetcodesln
             return VersionStatus[n];
         }
     }
-    public class _1stBadVersion : VersionControl
+    public class FirststBadVersion : VersionControl
     {
-        public _1stBadVersion(int n, int firstBadVersion) : base(n, firstBadVersion)
+        public FirststBadVersion(int n, int firstBadVersion) : base(n, firstBadVersion)
         {
         }
 

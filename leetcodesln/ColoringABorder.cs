@@ -17,15 +17,15 @@ namespace leetcodesln
             var queue = new Queue<int[]>();
 
             int[][] dirs = new int[4][];
-            dirs[0] = new int[] { 1, 0 };
-            dirs[1] = new int[] { -1, 0 };
-            dirs[2] = new int[] { 0, 1 };
-            dirs[3] = new int[] { 0, -1 };
+            dirs[0] = new[] { 1, 0 };
+            dirs[1] = new[] { -1, 0 };
+            dirs[2] = new[] { 0, 1 };
+            dirs[3] = new[] { 0, -1 };
 
             int val = grid[r0][c0];
             queue.Enqueue(new int[] { r0, c0 });
 
-            while (queue.Count!=0)
+            while (queue.Count != 0)
             {
                 int size = queue.Count;
 
@@ -33,7 +33,7 @@ namespace leetcodesln
                 {
                     var point = queue.Dequeue();
 
-                    if(NeedColor(grid,point[0], point[1], val))
+                    if (NeedColor(grid, point[0], point[1], val))
                     {
                         check[point[0]][point[1]] = true;
                         grid[point[0]][point[1]] = -grid[point[0]][point[1]];
@@ -61,7 +61,7 @@ namespace leetcodesln
             {
                 for (int b = 0; b < grid[a].Length; b++)
                 {
-                    if (grid[a][b]< 0) grid[a][b] = color;
+                    if (grid[a][b] < 0) grid[a][b] = color;
                 }
             }
             return grid;
@@ -70,10 +70,10 @@ namespace leetcodesln
         private bool NeedColor(int[][] grid, int x, int y, int val)
         {
             int[][] dirs = new int[4][];
-            dirs[0] = new int[] { 1, 0 };
-            dirs[1] = new int[] { -1, 0 };
-            dirs[2] = new int[] { 0, 1 };
-            dirs[3] = new int[] { 0, -1 };
+            dirs[0] = new[] { 1, 0 };
+            dirs[1] = new[] { -1, 0 };
+            dirs[2] = new[] { 0, 1 };
+            dirs[3] = new[] { 0, -1 };
 
             if (x == 0 || y == 0 || x == grid.Length - 1 || y == grid[0].Length - 1) return true;
             foreach (var dir in dirs)

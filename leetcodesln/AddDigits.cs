@@ -8,7 +8,7 @@ namespace leetcodesln
         {
             string str = Convert.ToString(num);
             int sum = 0;
-            foreach (var item in str.ToCharArray())
+            foreach (var item in str)
             {
                 sum += Convert.ToInt32(item.ToString());
             }

@@ -12,7 +12,7 @@
 
             for (int i = 1; i < words.Length; i++)
             {
-                if (CompareTwo(words[i], words[i - 1]) < 0) return false;
+                if (CompareTwo(words[i], words[i - 1]) < 0) { return false; }
             }
             return true;
 
