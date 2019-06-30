@@ -1,8 +1,6 @@
 ﻿using leetcodesln;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln_test
 {
@@ -21,7 +19,7 @@ namespace leetcodesln_test
         public void TestMethod1()
         {
             var nums = new int[] { -1, 0, 1, 2, -1, -4 };
-            var expected = new List<IList<int>>() { new List<int>() { -1, 0, 1 }, new List<int>() { -1, -1, 2 } };
+            var expected = new List<IList<int>>() { new List<int>() { -1, -1, 2 }, new List<int>() { -1, 0, 1 } };
             var actual = ThreeSum.ThreeSumSln(nums);
             for (int i = 0; i < expected.Count; i++)
             {
@@ -32,5 +30,19 @@ namespace leetcodesln_test
             }
         }
 
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod2()
+        {
+            var nums = new int[] { 0, 0, 0, 0 };
+            var expected = new List<IList<int>>() { new List<int>() { 0, 0, 0 } };
+            var actual = ThreeSum.ThreeSumSln(nums);
+            for (int i = 0; i < expected.Count; i++)
+            {
+                for (int j = 0; j < expected[i].Count; j++)
+                {
+                    Assert.AreEqual(expected[i][j], actual[i][j]);
+                }
+            }
+        }
     }
 }
