@@ -8,15 +8,14 @@ namespace leetcodesln
         {
             var ans = new int[n];
 
-            for (int i = 0; i < bookings.Length; i++)
+            foreach (var booking in bookings)
             {
-                var start = bookings[i][0];
-                var end = bookings[i][1];
-                var tickets = bookings[i][2];
-                for (int j = start - 1; j < end; j++)
-                {
-                    ans[j] += tickets;
-                }
+                ans[booking[0] - 1] += booking[2];
+                if (booking[1] < n) ans[booking[1]] -= booking[2];
+            }
+            for (int i = 1; i < n; i++)
+            {
+                ans[i] += ans[i - 1];
             }
 
             return ans;
