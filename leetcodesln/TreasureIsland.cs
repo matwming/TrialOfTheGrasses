@@ -17,7 +17,7 @@ namespace leetcodesln
             if (map[0][0] == 'D') return -1;
 
             var q = new Queue<int[]>();
-            q.Enqueue(new[] { 0, 0, 0 });
+            q.Enqueue(new[] { 0, 0, 1 });
 
             while (q.Count != 0)
             {
@@ -26,6 +26,7 @@ namespace leetcodesln
                 {
                     var x = current[0] + dir[0];
                     var y = current[1] + dir[1];
+                    if (x < 0 || x >= map.Length || y < 0 || y >= map[0].Length) continue;
                     if (map[x][y] == 'O')
                     {
                         map[x][y] = 'D';
@@ -36,6 +37,10 @@ namespace leetcodesln
                         if (shortestPath.HasValue)
                         {
                             shortestPath = shortestPath > current[2] ? current[2] : shortestPath;
+                        }
+                        else
+                        {
+                            shortestPath = current[2];
                         }
                     }
                 }
