@@ -1,5 +1,6 @@
 ﻿using leetcodesln.common;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace leetcodesln
 {
@@ -8,25 +9,16 @@ namespace leetcodesln
         public int MaxDepth(Node root)
         {
             if (root == null) return 0;
-            var depth = 0;
-            var queue = new Queue<Node>();
-            queue.Enqueue(root);
+            if (root.children == null || root.children.Count == 0) return 1;
 
-            while (queue.Count != 0)
+            var max = new List<int>();
+
+            foreach (var child in root.children)
             {
-                ++depth;
-                var size = queue.Count;
-                for (int i = 0; i < size; i++)
-                {
-                    var current = queue.Dequeue();
-                    for (int j = 0; j < current.children.Count; j++)
-                    {
-                        queue.Enqueue(current.children[j]);
-                    }
-                }
+                var depth = MaxDepth(child);
+                max.Add(depth);
             }
-            return depth;
-
+            return max.Max() + 1;
         }
     }
 }
