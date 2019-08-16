@@ -32,6 +32,8 @@ namespace leetcodesln_test
             Assert.AreEqual(expected, actual);
         }
 
+
+        //the last row has only one char 
         [TestMethod, Timeout(20_000)]
         public void TestMethod3()
         {
