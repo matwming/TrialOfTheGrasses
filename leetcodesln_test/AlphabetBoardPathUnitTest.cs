@@ -38,7 +38,7 @@ namespace leetcodesln_test
         public void TestMethod3()
         {
             var input = "zdz";
-            var expected = "DDDDD!UUUUURRR!DDDDLLLD!";
+            var expected = "DDDDD!UUUUURRR!LLLDDDDD!";
             var actual = AlphabetBoardPath.AlphabetBoardPathSln(input);
             Assert.AreEqual(expected, actual);
         }
