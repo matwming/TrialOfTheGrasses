@@ -6,20 +6,22 @@ namespace leetcodesln
 {
     public class JewelsAndStones
     {
-        public int NumJewelsInStones(string J , string S)
+        public int NumJewelsInStones(string J, string S)
         {
-            int num = 0;
-            for (int i = 0; i < J.Length; i++)
+            var ans = 0;
+            var jewels = new HashSet<char>();
+            foreach (var chr in J)
             {
-                for (int j = 0; j < S.Length; j++)
+                jewels.Add(chr);
+            }
+            foreach (var chr in S)
+            {
+                if (jewels.Contains(chr))
                 {
-                    if (J[i] == S[j])
-                    {
-                        num++;
-                    }
+                    ans++;
                 }
             }
-            return num;
+            return ans;
         }
     }
 }
