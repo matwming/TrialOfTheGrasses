@@ -9,14 +9,12 @@ namespace leetcodesln
     {
         public TreeNode InvertTree(TreeNode root)
         {
-            if (root == null)
-            {
-                return root;
-            }
-            var temp = root.left;
-            root.left = InvertTree(root.right);
-            root.right = InvertTree(temp);
-            return root;
+            if (root == null) { return null; }
+
+            var newRoot = new TreeNode(root.val);
+            newRoot.left = InvertTree(root.right);
+            newRoot.right = InvertTree(root.left);
+            return newRoot;
         }
     }
 }
