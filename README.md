@@ -1,4 +1,4 @@
-> A mistake thant makes you humble 
+> A mistake that makes you humble 
 > is better than achievement that makes you arrogant.
 
 # leetcode Solutions
