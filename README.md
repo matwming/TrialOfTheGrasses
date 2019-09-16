@@ -1,3 +1,6 @@
+> A mistake thant makes you humble 
+> is better than achievement that makes you arrogant.
+
 # leetcode Solutions
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e2bc6c8566214a5892de7398beeb84a4)](https://app.codacy.com/app/user3301/Leetcode?utm_source=github.com&utm_medium=referral&utm_content=user3301/Leetcode&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/user3301/Leetcode.svg?branch=master)](https://travis-ci.org/user3301/Leetcode)
@@ -7,7 +10,7 @@
 [![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](https://github.com/user3301/leetcodecsln/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-:construction:Leetcode solutions using C# with test cases.
+:construction:My Leetcode algorithm question practice solution using C# (.Net Core) and tested with MSUnit. Hope it would help anyone with their technical interviews or inspires someone who is simply interested in algorithms just like me. 
 
 ## Table of contents
 - [leetcode Solutions](#leetcode-solutions)
