@@ -11,6 +11,7 @@ namespace leetcodesln_test
         {
             LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new LongestSubstringWithoutRepeatingCharacters();
             Assert.AreEqual(3, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("abcabcbb"));
+            Assert.AreEqual(2, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("abba"));
             Assert.AreEqual(1, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("bbbb"));
             Assert.AreEqual(3, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("pwwkew"));
             Assert.AreEqual(2, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("au"));
