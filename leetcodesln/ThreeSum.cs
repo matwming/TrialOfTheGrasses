@@ -7,37 +7,31 @@ namespace leetcodesln
     {
         public IList<IList<int>> ThreeSumSln(int[] nums)
         {
-            var ans = new List<IList<int>>();
-
             Array.Sort(nums);
 
-            for (int i = 0; i < nums.Length - 2; i++)
+            var ans = new List<IList<int>>();
+
+            for (int i = 0; i < nums.Length -2; i++)
             {
-                if (i > 0 && nums[i] == nums[i - 1] || nums[i] > 0) continue;
-                Find(ref ans, ref nums, -nums[i], i + 1, nums.Length - 1);
+                var target = 0 - nums[i];
+
+                var low = i + 1;
+                var high = nums.Length - 1;
+                while(low < high)
+                {
+                    if (nums[low] + nums[high] == target)
+                    {
+                        ans.Add(new List<int> { nums[i], nums[low], nums[high] });
+                        while (low + 1 < high && nums[low + 1] == nums[low]) low++;
+                        while (high - 1 > low && nums[high - 1] == nums[high]) high--;
+                        low++;
+                        high--;
+                    }
+                    else if (nums[low] + nums[high] > target) high--;
+                    else low++;
+                }
             }
             return ans;
-        }
-
-        private void Find(ref List<IList<int>> ans, ref int[] nums, int complement, int left, int right)
-        {
-            while (left < right)
-            {
-                if (nums[left] + nums[right] == complement)
-                {
-                    var local = new List<int>();
-                    local.Add(-complement);
-                    local.Add(nums[left]);
-                    local.Add(nums[right]);
-                    ans.Add(local);
-                    while (left < right && nums[left] == nums[left + 1]) { left++; }
-                    while (left < right && nums[right] == nums[right - 1]) { right--; }
-                    left++;
-                    right--;
-                }
-                else if (nums[left] + nums[right] > complement) { right--; }
-                else { left++; }
-            }
         }
     }
 }
