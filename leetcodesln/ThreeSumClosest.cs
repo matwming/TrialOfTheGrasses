@@ -6,42 +6,36 @@ namespace leetcodesln
     {
         public int ThreeSumClosestSln(int[] nums, int target)
         {
-
             Array.Sort(nums);
 
-            int sum = 0;
+            if (nums.Length < 3) throw new Exception();
 
-            int? diff = null;
+            var closest = nums[0] + nums[1] + nums[2];
 
-            for (int i = 0; i < nums.Length; ++i)
+            for (int i = 0; i < nums.Length - 2; ++i)
             {
-                var t = target - nums[i];
-
-                var low = i + 1;
-                var high = nums.Length - 1;
+                int low = i + 1, high = nums.Length - 1;
 
                 while (low < high)
                 {
-                    if (diff == null || diff > Math.Abs(t - nums[low] - nums[high]))
+                    int sum = nums[i] + nums[low] + nums[high];
+                    if (sum < target)
                     {
-                        diff = Math.Abs(t - nums[low] - nums[high]);
-                        sum = nums[i] + nums[low] + nums[high];
-                        high--;
-                    }
-                    else if (diff == null || diff < Math.Abs(t - nums[low] - nums[high]))
-                    {
-                        diff = Math.Abs(t - nums[low] - nums[high]);
-                        sum = nums[i] + nums[low] + nums[high];
+                        //跳过相同的值
+                        while (low + 1 < high && nums[low + 1] == nums[low]) low++;
                         low++;
                     }
-                    else
+                    else if (sum > target)
                     {
-                        low++;
+                        //跳过相同的值
+                        while (high - 1 > low && nums[high - 1] == nums[high]) high--;
                         high--;
                     }
+                    else return sum;
+                    if (Math.Abs(target - sum) < Math.Abs(target - closest)) closest = sum;
                 }
             }
-            return sum;
+            return closest;
         }
     }
 }
