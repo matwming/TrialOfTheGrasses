@@ -7,43 +7,29 @@ namespace leetcodesln
         public string FindLongestWord(string s, IList<string> d)
         {
             string ans = string.Empty;
-            foreach (var word in d)
+
+            foreach (var str in d)
             {
-                if (word.Length <= s.Length)
+                if (IsSubstring(s, str))
                 {
-                    if (CanFormByDelete(s, word))
+                    if (ans.Length < str.Length || (ans.Length == str.Length && ans.CompareTo(str) > 0))
                     {
-                        if (ans.Length < word.Length)
-                        {
-                            ans = word;
-                        }
-                        else if (ans.Length == word.Length)
-                        {
-                            ans = ans[0] > word[0] ? word : ans;
-                        }
+                        ans = str;
                     }
                 }
             }
             return ans;
         }
 
-        private bool CanFormByDelete(string s, string word)
+        bool IsSubstring(string s, string d)
         {
-            var ls = 0;
-            var ws = 0;
-            while (ls < s.Length && ws < word.Length)
+            int sptr = 0, dptr = 0;
+
+            while (sptr < s.Length && dptr < d.Length)
             {
-                if (word[ws] == s[ls])
-                {
-                    ls++;
-                    ws++;
-                }
-                else
-                {
-                    ls++;
-                }
+                if (s[sptr++] == d[dptr]) dptr++;
             }
-            return ws == word.Length;
+            return dptr == d.Length;
         }
     }
 }
