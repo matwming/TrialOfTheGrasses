@@ -19,6 +19,7 @@ namespace leetcodesln_test
             Assert.AreEqual(7, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("bpfbhmipx"));
             Assert.AreEqual(6, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("ggububgvfk"));
             Assert.AreEqual(3, longestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("pwwkew"));
+            Assert.AreEqual(3, longestSubstringWithoutRepeatingCharacters.OptimizedSolution("aabaab!bb"));
 
         }
     }
