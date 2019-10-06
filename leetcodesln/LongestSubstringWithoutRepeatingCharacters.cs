@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace leetcodesln
@@ -34,7 +34,8 @@ namespace leetcodesln
 
             int max = 0;
 
-            for (int l = 0, r = 0; l < s.Length; l++)
+
+            for (int l = 0, r = 0; r < s.Length; ++r)
             {
                 if (dict.ContainsKey(s[r]))
                 {
