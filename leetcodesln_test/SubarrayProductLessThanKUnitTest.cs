@@ -24,5 +24,14 @@ namespace leetcodesln_test
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod2()
+        {
+            var nums = new[] { 1, 1, 1 };
+            var k = 0;
+            var expected = 0;
+            var actual = SubarrayProductLessThanK.NumSubarrayProductLessThanK(nums, k);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
