@@ -2,7 +2,7 @@
 For two days more did symptoms not subside. The child's skin, hitherto drenched in sweat, grew dry and hot, the pulse ceased to be full and firm — albeit remaining of average strength, slow rather than fast. No more did he wake, nor did he scream.
 Finally, came the seventh day. The male awoke and opened his eyes, and his eyes were those of a viper...                    
 
-# leetcode Solutions
+# Trial Of The Grasses
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e2bc6c8566214a5892de7398beeb84a4)](https://app.codacy.com/app/user3301/Leetcode?utm_source=github.com&utm_medium=referral&utm_content=user3301/Leetcode&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/user3301/TrialOfTheGrasses.svg?branch=master)](https://travis-ci.org/user3301/TrialOfTheGrasses)
 [![codecov](https://codecov.io/gh/user3301/Leetcode/branch/master/graph/badge.svg)](https://codecov.io/gh/user3301/Leetcode)
