@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace leetcodesln_test
 {
-    [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
+    [TestClass]
     public class QueensThatCanAttackTheKingUnitTest
     {
         public QueensThatCanAttackTheKing QueensThatCanAttackTheKing { get; set; }
