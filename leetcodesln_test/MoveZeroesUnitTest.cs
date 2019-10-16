@@ -44,5 +44,13 @@ namespace leetcodesln_test
             Assert.IsTrue(Enumerable.SequenceEqual<int>(expected, input));
         }
 
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod4()
+        {
+            var input = new int[] { 0, 0, 1 };
+            var expected = new int[] { 1, 0, 0 };
+            MoveZeroes.MoveZeroesTwoPointersSln(input);
+            Assert.IsTrue(Enumerable.SequenceEqual<int>(expected, input));
+        }
     }
 }
