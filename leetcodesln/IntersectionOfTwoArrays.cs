@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace leetcodesln
 {
@@ -25,6 +27,29 @@ namespace leetcodesln
                 }
             }
             return list.ToArray();
+       }
+
+       public int[] IntersectionTwoPointers(int[] nums1, int[] nums2)
+       {
+           var ans = new HashSet<int>();
+            Array.Sort(nums1);
+            Array.Sort(nums2);
+            int n1 = 0, n2 = 0;
+            while(n1 < nums1.Length && n2 < nums2.Length)
+            {
+                if(nums1[n1] == nums2[n2])
+                {
+                    ans.Add(nums1[n1]);
+                    n1++;
+                    n2++;
+                }
+                else if(nums1[n1] >= nums2[n2])
+                {
+                    n2++;
+                }
+                else n1++;
+            }
+            return ans.ToArray();
        }
     }
 }
