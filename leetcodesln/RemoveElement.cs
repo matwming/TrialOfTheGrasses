@@ -1,34 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace leetcodesln
+﻿namespace leetcodesln
 {
     public class RemoveElement
     {
         public int RemoveElementSln(int[] nums, int val)
         {
-            var totalLen = 0;
-            for (int s = 0, e = nums.Length-1; s <= e; s++)
+            // two pointer high low switch
+
+            int l = 0, r = nums.Length - 1;
+
+            while (l <= r)
             {
-                if(nums[s] == val)
+                if (nums[l] == val)
                 {
-                    while(nums[e] == val && e > s)
-                    {
-                        e--;
-                    }
-                    if (s == e) break;
-                    nums[s] = nums[e];
-                    nums[e] = val;
-                    totalLen++;
+                    var temp = nums[r];
+                    nums[r] = nums[l];
+                    nums[l] = temp;
+                    --r;
                 }
                 else
                 {
-                    totalLen++;
+                    l++;
                 }
             }
-            return totalLen;
+            return r + 1;
         }
     }
 }
