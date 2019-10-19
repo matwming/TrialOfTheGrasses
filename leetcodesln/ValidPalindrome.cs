@@ -4,28 +4,13 @@
     {
         public bool IsPalindrome(string s)
         {
-            for (int front = 0, end = s.Length - 1; front < end; front++, end--)
-            {
-                while (!char.IsLetterOrDigit(s[front]) && front < s.Length - 1)
-                {
-                    front++;
-                }
-                while (!char.IsLetterOrDigit(s[end]) && end > 0)
-                {
-                    end--;
-                }
+            int l = 0, r = s.Length - 1;
 
-                if (front <= end)
-                {
-                    if (char.ToLower(s[front]) == char.ToLower(s[end]))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
+            while (l < r)
+            {
+                while (l < r && !char.IsLetterOrDigit(s[l])) ++l;
+                while (r > l && !char.IsLetterOrDigit(s[r])) --r;
+                if (char.ToLower(s[l++]) != char.ToLower(s[r--])) return false;
             }
             return true;
         }

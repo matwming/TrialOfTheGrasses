@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace leetcodesln
 {
@@ -77,6 +78,29 @@ namespace leetcodesln
                 }
             }
             return count;
+        }
+
+        public int FindPairsBinarySearch(int[] nums, int k)
+        {
+            Array.Sort(nums);
+            int ans = 0;
+            for (int i = 0; i < nums.Length - 1; ++i)
+            {
+                int l = i + 1, r = nums.Length - 1;
+                while (l <= r)
+                {
+                    var mid = (r + l) / 2;
+                    if (nums[mid] - nums[i] == k)
+                    {
+                        ans++;
+                        break;
+                    }
+                    else if (nums[mid] - nums[i] > k) r = mid - 1;
+                    else l = mid + 1;
+                }
+                while (i < nums.Length - 2 && nums[i + 1] == nums[i]) i++;
+            }
+            return ans;
         }
     }
 }

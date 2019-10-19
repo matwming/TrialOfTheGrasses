@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace leetcodesln
 {
@@ -28,6 +29,23 @@ namespace leetcodesln
                 if (!vowels.Contains(s[right])) right--;
             }
             return new string(str);
+        }
+
+        public string ReverseVowels2(string s)
+        {
+            var ss = s.ToCharArray();
+            var vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+
+            int l = 0, r = s.Length - 1;
+            while (l < r)
+            {
+                while (!vowels.Contains(ss[l]) && l < r) ++l;
+                while (!vowels.Contains(ss[r]) && r > l) --r;
+                var temp = s[l];
+                ss[l++] = ss[r];
+                ss[r--] = temp;
+            }
+            return new string(ss);
         }
     }
 }
