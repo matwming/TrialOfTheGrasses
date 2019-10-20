@@ -28,6 +28,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 3 | :star: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C#](./leetcodesln/LongestSubstringWithoutRepeatingCharacters.cs) | Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1) |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [C#](./leetcodesln/ContainerWithMostWater.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 15| :star: [3Sum](https://leetcode.com/problems/3sum/) | [C#](./leetcodesln/ThreeSum.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#](./leetcodesln/ThreeSumClosest.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C#](./leetcodesln/RemoveElement.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
@@ -56,6 +57,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [C#](./leetcodesln/SumOfSquareNumbers.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [C#](./leetcodesln/ValidPalindromeII.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C#](./leetcodesln/SubarrayProductLessThanK.cs) | Medium | `Two Pointers` | O(n) | O(1) |
+| 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C#](./leetcodesln/PartitionLabels.cs) | Medium | `Greedy`, `Sliding Window` | O(n) | O(26) | 
 | 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C#](./leetcodesln/BackspaceStringCompare.cs) | Easy | `Stack`, :star:`Two Pointers` | O(n) | O(1) | 
 | 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C#](./leetcodesln/FruitIntoBaskets.cs) | Medium | `Two Pointers` | O(n) | O(2) |
 | 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C#](./leetcodesln/LongPressedName.cs) | Easy | `Two Pointers` | O(n) | O(1) |
@@ -72,6 +74,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 3 | :star: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C#](./leetcodesln/LongestSubstringWithoutRepeatingCharacters.cs) | Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1) |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [C#](./leetcodesln/ContainerWithMostWater.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 15| :star: [3Sum](https://leetcode.com/problems/3sum/) | [C#](./leetcodesln/ThreeSum.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#](./leetcodesln/ThreeSumClosest.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C#](./leetcodesln/RemoveElement.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
@@ -97,6 +100,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [C#](./leetcodesln/SumOfSquareNumbers.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [C#](./leetcodesln/ValidPalindromeII.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C#](./leetcodesln/SubarrayProductLessThanK.cs) | Medium | `Two Pointers` | O(n) | O(1) |
+| 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C#](./leetcodesln/PartitionLabels.cs) | Medium | `Greedy`, `Sliding Window` | O(n) | O(26) | 
 | 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C#](./leetcodesln/BackspaceStringCompare.cs) | Easy | `Stack`, :star:`Two Pointers` | O(n) | O(1) | 
 | 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C#](./leetcodesln/FruitIntoBaskets.cs) | Medium | `Two Pointers` | O(n) | O(2) |
 | 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C#](./leetcodesln/LongPressedName.cs) | Easy | `Two Pointers` | O(n) | O(1) |
