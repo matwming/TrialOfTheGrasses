@@ -89,7 +89,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 344 | :white_check_mark:[Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](./leetcodesln/ReverseString.cs) | Easy | `Two Pointers` | O(n) | O(n) | 
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C#](./leetcodesln/ReverseVowelsOfAString.cs) | Easy | `Two Pointers` | O(n) | O(1) |
-| 350 | [Intersection of Two Arrays II] | [C#](./leetcodesln/IntersectionOfTwoArrayII.cs) | Easy | `Two Pointers` | O(n) | O(n) |
+| 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C#](./leetcodesln/IntersectionOfTwoArrayII.cs) | Easy | `Two Pointers` | O(n) | O(n) |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [C#](./leetcodesln/IntersectionOfTwoArrays.cs) | Easy | `Two Pointers`, `HashSet` | O(n) | O(n) |
 | 424 | :star::star:[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [C#](./leetcodesln/LongestRepeatingCharacterReplacement.cs) | Medium | `Sliding Window`, `Two Pointers` | O(n) | O(26) | 
 | 457 | :star: [Circular Array Loop](https://leetcode.com/problems/circular-array-loop/) | [C#](./leetcodesln/CircularArrayLoop.cs) | Medium | `Two Pointers` | O(n) | O(1) |
