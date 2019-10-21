@@ -23,6 +23,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [Strings](#strings)
     - [Array & Matrix](#array--matrix)
     - [Stack](#stack)
+    - [HashTable & HashSet](#hashtable--hashset)
 
 ## Questions list
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
@@ -33,6 +34,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#](./leetcodesln/ThreeSumClosest.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C#](./leetcodesln/RemoveElement.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [C#](./leetcodesln/ImplementStrStr.cs) | Easy | `Two Pointers`, :star:`KMP` | O(m*n) | O(1) | 
+| 36 | :star:[Valid Suduku](https://leetcode.com/problems/valid-sudoku/) | [C#](./leetcodesln/ValidSudoku.cs) | Medium | `Hashtable` | O(81) | O(81*3) |
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | | Medium | `Two Pointers` | O(n) | O(1) | 
 | 80 | :star: [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#](./leetcodesln/RemoveDuplicatesFromSortedArrayII.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./leetcodesln/MergeSortedArray.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
@@ -42,6 +44,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [C#](./leetcodesln/MinimumSizeSubarraySum.cs) | Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1)|
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C#](./leetcodesln/KthLargestElementInAnArray.cs) | Medium | `Sorting`, `Priority Queue` | O(NLogK) | O(1) |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) | Easy | `Two Pointers` | O(n) | O(1) |
+| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./leetcodesln/BullsAndCows.cs) | Easy | `HashTable` | O(n) | O(n) |
 | 344 | :white_check_mark:[Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](./leetcodesln/ReverseString.cs) | Easy | `Two Pointers` | O(n) | O(n) | 
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C#](./leetcodesln/ReverseVowelsOfAString.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C#](./leetcodesln/TopKFrequentElements.cs) | Medium | `Bucket Sort` | O(n) | O(n) |
@@ -131,3 +134,10 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C#](./leetcodesln/BackspaceStringCompare.cs) | Easy | `Stack`, :star:`Two Pointers` | O(n) | O(1) | 
+
+### HashTable & HashSet
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C#](./leetcodesln/TwoSum.cs) | Easy | `Two Pointers`, `Hashtable` | O(n), O(n) | O(1), O(n) |
+| 36 | :star:[Valid Suduku](https://leetcode.com/problems/valid-sudoku/) | [C#](./leetcodesln/ValidSudoku.cs) | Medium | `Hashtable` | O(81) | O(81*3) |
+| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./leetcodesln/BullsAndCows.cs) | Easy | `HashTable` | O(n) | O(n) |
