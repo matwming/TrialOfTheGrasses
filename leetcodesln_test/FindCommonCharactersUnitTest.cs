@@ -20,7 +20,7 @@ namespace leetcodesln_test
         {
             var input = new string[] { "bella", "label", "roller" };
             var expected = new string[] { "e", "l", "l" };
-            var actual = FindCommonCharacters.CommonChars(input);
+            var actual = FindCommonCharacters.CommonCharsFrequencyArray(input);
             Assert.IsTrue(Enumerable.SequenceEqual(expected, actual));
 
         }

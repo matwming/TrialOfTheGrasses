@@ -20,7 +20,7 @@ namespace leetcodesln_test
             var s = "cbaebabacd";
             var p = "abc";
             var expected = new int[] { 0, 6 };
-            var actual = FindAllAnagramsInAString.FindAnagrams(s, p);
+            var actual = FindAllAnagramsInAString.FindAnagramsTwoPointerSlidingWindow(s, p);
             for (int i = 0; i < expected.Length; i++)
             {
                 Assert.AreEqual(expected[i], actual[i]);

@@ -44,5 +44,30 @@ namespace leetcodesln
             }
             return count;
         }
+
+        public IList<string> CommonCharsFrequencyArray(string[] A)
+        {
+            var ans = new List<string>();
+            var frequencyArray = new int[26];
+            Array.Fill(frequencyArray, int.MaxValue);
+
+            foreach (var str in A)
+            {
+                var count = new int[26];
+                for (int i = 0; i < str.Length; i++)
+                {
+                    ++count[str[i] - 'a'];
+                }
+                for (int i = 0; i < 26; i++)
+                {
+                    frequencyArray[i] = Math.Min(count[i], frequencyArray[i]);
+                }
+            }
+            for (char c = 'a'; c <= 'z'; ++c)
+            {
+                while (frequencyArray[c - 'a']-- > 0) ans.Add(c.ToString());
+            }
+            return ans;
+        }
     }
 }
