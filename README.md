@@ -18,6 +18,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
   - [Questions list](#questions-list)
   - [Algorithms](#algorithms)
     - [Two Pointers](#two-pointers)
+    - [Binary Search](#binary-search)
     - [Sortings](#sortings)
     - [Strings](#strings)
     - [Array & Matrix](#array--matrix)
@@ -34,6 +35,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | [C#](./leetcodesln/FourSum.cs) | Medium | `Binary Search`, `Two Pointers` | O(n^2 + n^3) | O(1) | 
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C#](./leetcodesln/RemoveElement.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [C#](./leetcodesln/ImplementStrStr.cs) | Easy | `Two Pointers`, :star:`KMP` | O(m*n) | O(1) | 
+| 33 | :star:[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C#](./leetcodesln/SearchInRotatedSortedArray.cs) | Medium | `Binary Search` | O(Logn) | O(1) | 
 | 36 | :star:[Valid Suduku](https://leetcode.com/problems/valid-sudoku/) | [C#](./leetcodesln/ValidSudoku.cs) | Medium | `Hashtable` | O(81) | O(81*3) |
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | | Medium | `Two Pointers` | O(n) | O(1) | 
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
@@ -119,6 +121,11 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 986 | :star:[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C#](./leetcodesln/IntervalListIntersections.cs) | Medium | `Two Pointers` | O(n) | O(n) |
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [C#](./leetcodesln/MaxConsecutiveOnesIII.cs) | Medium | `Sliding Window` | O(n) | O(1) |
 | 1200 | :white_check_mark:[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | [C#](./leetcodesln/MinimumAbsoluteDifference.cs) | Easy | `Two Pointers` | O(nlogn + n) | O(1) | 
+
+### Binary Search
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 33 | :star:[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C#](./leetcodesln/SearchInRotatedSortedArray.cs) | Medium | `Binary Search` | O(Logn) | O(1) | 
 
 ### Sortings
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
