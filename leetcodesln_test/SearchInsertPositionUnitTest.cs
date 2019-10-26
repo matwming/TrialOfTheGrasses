@@ -1,8 +1,5 @@
 ﻿using leetcodesln;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace leetcodesln_test
 {
@@ -70,9 +67,19 @@ namespace leetcodesln_test
         [TestMethod, Timeout(20_000)]
         public void SearchInsertPositionTestMethod6()
         {
-            var input = new int[] { 1, 3,5 };
+            var input = new int[] { 1, 3, 5 };
             var target = 4;
             var expected = 2;
+            var actual = searchInsertPosition.SearchInsert(input, target);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod, Timeout(20_000)]
+        public void SearchInsertPositionTestMethod7()
+        {
+            var input = new int[] { 1 };
+            var target = 1;
+            var expected = 0;
             var actual = searchInsertPosition.SearchInsert(input, target);
             Assert.AreEqual(expected, actual);
         }
