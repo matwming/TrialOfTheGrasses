@@ -39,6 +39,8 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C#](./leetcodesln/FindFirstAndLastPositionOfElementInSortArray.cs) | Medium |`Binary Search`|  O(logn) | O(1) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [C#](./leetcodesln/SearchInsertPosition.cs) | Medium | `Binary Search` | O(logn) | O(1) |
 | 36 | :star:[Valid Suduku](https://leetcode.com/problems/valid-sudoku/) | [C#](./leetcodesln/ValidSudoku.cs) | Medium | `Hashtable` | O(81) | O(81*3) |
+| 50 | [Pow(x,n)](https://leetcode.com/problems/powx-n/) | [C#](./leetcodesln/PowX_N.cs) | Medium | `Binary Search`, `Recursion` | O(logn) | O(1) |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [C#](./leetcodesln/Sqrt(x).cs) | Easy | `Binary Search` | O(logn) | O(1) | 
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | | Medium | `Two Pointers` | O(n) | O(1) | 
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
 | 80 | :star: [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#](./leetcodesln/RemoveDuplicatesFromSortedArrayII.cs) | Medium | `Two Pointers` | O(n) | O(1) |
@@ -130,6 +132,8 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 33 | :star:[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C#](./leetcodesln/SearchInRotatedSortedArray.cs) | Medium | `Binary Search` | O(Logn) | O(1) | 
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C#](./leetcodesln/FindFirstAndLastPositionOfElementInSortArray.cs) | Medium |`Binary Search`|  O(logn) | O(1) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [C#](./leetcodesln/SearchInsertPosition.cs) | Medium | `Binary Search` | O(logn) | O(1) |
+| 50 | [Pow(x,n)](https://leetcode.com/problems/powx-n/) | [C#](./leetcodesln/PowX_N.cs) | Medium | `Binary Search`, `Recursion` | O(logn) | O(1) |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [C#](./leetcodesln/Sqrt(x).cs) | Easy | `Binary Search` | O(logn) | O(1) | 
 
 ### Sortings
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
