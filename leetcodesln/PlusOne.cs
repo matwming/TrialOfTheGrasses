@@ -1,50 +1,56 @@
-﻿namespace leetcodesln
+﻿using System.Collections.Generic;
+
+namespace leetcodesln
 {
     public class PlusOne
     {
         public int[] PlusOneSln(int[] digits)
         {
-            var startingIndex = digits.Length - 1;
-            while (TryAddUp(ref digits, startingIndex))
+            int a = 1;
+            var s = new Stack<int>();
+            for (int i = digits.Length - 1; i >= 0; --i)
             {
-                startingIndex--;
-            }
-            return digits;
-
-        }
-
-        private bool TryAddUp(ref int[] digits, int index)
-        {
-            var res = false;
-            if (index < 0)
-            {
-                digits = new int[digits.Length + 1];
-                for (int i = 0; i < digits.Length; i++)
+                var sum = a + digits[i];
+                if (sum >= 10)
                 {
-                    if (i == 0)
-                    {
-                        digits[i] = 1;
-                    }
-                    else
-                    {
-                        digits[i] = 0;
-                    }
-                }
-                return false;
-            }
-            else
-            {
-                if (digits[index] + 1 >= 10)
-                {
-                    digits[index] = 0;
-                    res = true;
+                    s.Push(sum - 10);
+                    a = 1;
                 }
                 else
                 {
-                    digits[index] += 1;
+                    s.Push(sum);
+                    a = 0;
                 }
             }
-            return res;
+
+            if (a == 1) s.Push(a);
+
+            var ans = new int[s.Count];
+
+            for (int i = 0; i < ans.Length; ++i)
+            {
+                ans[i] = s.Pop();
+            }
+            return ans;
+        }
+
+        // optimal solution
+        public int[] PlusOneOptimal(int[] digits)
+        {
+            for (int i = digits.Length - 1; i >= 0; --i)
+            {
+                if (digits[i] < 9)
+                {
+                    digits[i]++;
+                    return digits;
+                }
+
+                digits[i] = 0;
+            }
+
+            var ans = new int[digits.Length + 1];
+            ans[0] = 1;
+            return ans;
         }
     }
 }
