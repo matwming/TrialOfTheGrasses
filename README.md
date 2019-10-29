@@ -181,6 +181,7 @@ Prefix-caching can solve many subarray related problems.
 
 ### HashTable & HashSet
 Hashtable has O(1) read/write, hashtable are often used to save preprocessed results or find matching elements.
+
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C#](./leetcodesln/TwoSum.cs) | Easy | `Two Pointers`, `Hashtable` | O(n), O(n) | O(1), O(n) |
