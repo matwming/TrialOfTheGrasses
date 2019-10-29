@@ -38,5 +38,22 @@
                 }
             }
         }
+
+        public void MoveZeroesOptimal(int[] nums)
+        {
+            int sorted = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 0)
+                {
+                    if (i != sorted)
+                    {
+                        nums[sorted] = nums[i];
+                        nums[i] = 0;
+                    }
+                    sorted++;
+                }
+            }
+        }
     }
 }
