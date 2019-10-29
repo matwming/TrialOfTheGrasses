@@ -160,6 +160,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 
 ### Array & Matrix
 Prefix-caching can solve many subarray related problems.
+
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [C#](./leetcodesln/RotateImage.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(1) | 
