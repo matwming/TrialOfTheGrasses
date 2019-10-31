@@ -83,6 +83,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [C#](./leetcodesln/RevealCardsInIncreasingOrder.cs) | Medium | `Array`, :star:`Queue` | O(n) | O(n) |
 | 961 | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | [C#](./leetcodesln/N-RepeatedElementInSize2NArray.cs) | Easy | `Hashtable`, `Array` | O(n) | O(n) |
 |977 | :white_check_mark:[Squares Of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [C#](./leetcodesln/SquaresOfASortedArray.cs) | Easy | `Two Pointers` | O(n) | O(n) |
+| 985 | :star: [Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | [C#](./leetcodesln/SumOfEvenNumbersAfterQueries.cs) | Easy | `Array`, `Prefix Caching` | O(n) | O(n) |
 | 986 | :star:[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C#](./leetcodesln/IntervalListIntersections.cs) | Medium | `Two Pointers` | O(n) | O(n) |
 | 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C#](./leetcodesln/FindCommonCharacters.cs) | Easy | `Array`, `HashTable` | O(26*26) | O(n) | 
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [C#](./leetcodesln/MaxConsecutiveOnesIII.cs) | Medium | `Sliding Window` | O(n) | O(1) |
@@ -174,6 +175,7 @@ Prefix-caching can solve many subarray related problems.
 | 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
 | 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C#](./leetcodesln/FindAllDuplicatesInAnArray.cs) | Medium | `Two Pointers`, `Array` | O(n) | O(1) |
 | 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [C#](./leetcodesln/RevealCardsInIncreasingOrder.cs) | Medium | `Array`, :star:`Queue` | O(n) | O(n) |
+| 985 | :star: [Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | [C#](./leetcodesln/SumOfEvenNumbersAfterQueries.cs) | Easy | `Array`, `Prefix Caching` | O(n) | O(n) |
 | 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C#](./leetcodesln/FindCommonCharacters.cs) | Easy | `Array`, `HashTable` | O(26*26) | O(n) |
 | 1222| :star:[Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | [C#](./leetcodesln/QueensThatCanAttackTheKing.cs) | Medium | `Array` | O(1) | O(64) |
 
