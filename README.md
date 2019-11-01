@@ -24,6 +24,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [Array & Matrix](#array--matrix)
     - [Stack](#stack)
     - [HashTable & HashSet](#hashtable--hashset)
+    - [Dynamic Programming](#dynamic-programming)
 
 ## Questions list
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
@@ -197,3 +198,8 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [C#](./leetcodesln/PermutationInString.cs) | Medium | `HashTable`, `Sliding Window`, `Two Pointers` | O(n) | O(n) | 
 | 961 | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | [C#](./leetcodesln/N-RepeatedElementInSize2NArray.cs) | Easy | `Hashtable`, `Array` | O(n) | O(n) |
 | 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C#](./leetcodesln/FindCommonCharacters.cs) | Easy | `Array`, `HashTable` | O(26*26) | O(n) |
+
+### Dynamic Programming
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 1143| :star::star:[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [C#](./leetcodesln/LongestCommonSubsequence.cs) | Medium | `DP` | O(n^2) | O(n^2) |
