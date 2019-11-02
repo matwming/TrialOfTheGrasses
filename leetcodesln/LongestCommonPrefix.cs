@@ -36,5 +36,21 @@ namespace leetcodesln
             }
             return result.Length == 1 ? (strs.Length == 1 ? strs[0] : result.ToString()) : result.ToString();
         }
+
+        public string LongestCommonPrefixOptimal(string[] strs)
+        {
+            if(strs.Length == 0) return string.Empty;
+
+            string prefix = strs[0];
+            int i = 0;
+            while(++i < strs.Length && prefix.Length > 0)
+            {
+                while(strs[i].IndexOf(prefix)!=0) 
+                {
+                    prefix = prefix.Substring(0, prefix.Length -1);
+                }
+            }
+            return prefix;
+        }
     }
 }

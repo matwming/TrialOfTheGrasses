@@ -58,5 +58,15 @@ namespace leetcodesln_test
             var actual = LongestCommonPrefix.LongestCommonPrefixSln(input);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod, Timeout(20_000)]
+        public void TestMethod6()
+        {
+            var input = new string[] { "c", "c" };
+            var expected = "c";
+            var actual = LongestCommonPrefix.LongestCommonPrefixOptimal(input);
+            Assert.AreEqual(expected, actual);
+        }
+ 
     }
 }
