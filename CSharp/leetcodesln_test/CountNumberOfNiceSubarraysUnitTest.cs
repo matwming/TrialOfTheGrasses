@@ -21,6 +21,7 @@ namespace leetcodesln_test
             var k = 3;
             var expected = 2;
             var actual = CountNumberOfNiceSubarrays.NumberOfSubarrays(nums, k);
+            Assert.AreEqual(expected, actual);
         }
 
     }
