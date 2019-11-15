@@ -47,7 +47,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 39 | :star: [Combination Sum](https://leetcode.com/problems/combination-sum/) | [C#](./leetcodesln/CombinationSum.cs) | Medium | `Backtracking` | O(2^n) | O(n) |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [C#](./leetcodesln/RotateImage.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(1) | 
 | 50 | [Pow(x,n)](https://leetcode.com/problems/powx-n/) | [C#](./leetcodesln/PowX_N.cs) | Medium | `Binary Search`, `Recursion` | O(logn) | O(1) |
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [C#](./leetcodesln/PlusOne.cs) | Easy | `Array` | O(n) | O(1) | 
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [C#](./leetcodesln/PlusOne.cs) [Go](./Go/questions/PlusOne.go) | Easy | `Array` | O(n) | O(1) | 
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [C#](./leetcodesln/Sqrt(x).cs) | Easy | `Binary Search` | O(logn) | O(1) | 
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | [C#](./CSharp/leetcodesln/SortColors.cs) | Medium | `Two Pointers` | O(n) | O(1) | 
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
@@ -175,8 +175,8 @@ Prefix-caching can solve many subarray related problems.
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [C#](./leetcodesln/RotateImage.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(1) | 
-| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [C#](./leetcodesln/PlusOne.cs) | Easy | `Array` | O(n) | O(1) | 
-| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [C#](./leetcodesln/MajorityElement.cs) | Easy | `Array`, `Boyer-Moore Voting Algorithm`, `Bit Manipulation` | O(n) | O(1) |
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [C#](./leetcodesln/PlusOne.cs) [Go](./Go/questions/PlusOne.go) | Easy | `Array` | O(n) | O(1) | 
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [C#](./leetcodesln/MajorityElement.cs) [Go](Go/questions/MajorityElement.go)| Easy | `Array`, `Boyer-Moore Voting Algorithm`, `Bit Manipulation` | O(n) | O(1) | 
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C#](./leetcodesln/SummaryRanges.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(n) | 
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | [C#](./leetcodesln/MajorityElementII.cs) | Medium | `Array`, `Boyer-Moore Voting Algorithm` | O(n) | O(1) | 
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C#](./leetcodesln/ProductOfArrayExceptSelf.cs) | Medium | `Array`, `Prefix Caching` | O(n) | O(n) |
@@ -197,7 +197,7 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C#](./leetcodesln/TwoSum.cs) | Easy | `Two Pointers`, `Hashtable` | O(n), O(n) | O(1), O(n) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C#](./leetcodesln/TwoSum.cs) [Go](./Go/questions/TwoSum.go) | Easy | `Two Pointers`, `Hashtable` | O(n), O(n) | O(1), O(n) |
 | 36 | :star:[Valid Suduku](https://leetcode.com/problems/valid-sudoku/) | [C#](./leetcodesln/ValidSudoku.cs) | Medium | `Hashtable` | O(81) | O(81*3) |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
 | 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./leetcodesln/BullsAndCows.cs) | Easy | `HashTable` | O(n) | O(n) |
