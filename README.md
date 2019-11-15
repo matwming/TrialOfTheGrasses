@@ -10,7 +10,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 [![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](https://github.com/user3301/leetcodecsln/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-:construction:My Leetcode algorithm question practice solution using C# (.Net Core) and tested with MSUnit. Hope it would help anyone with their technical interviews or inspires someone who is simply interested in algorithms just like me. 
+:construction:My Leetcode algorithm question practice solution using a variety of programming languages. Hope it would help anyone with their technical interviews or inspires someone who is simply interested in algorithms just like me. 
 
 ## Table of contents
 - [Trial Of The Grasses](#trial-of-the-grasses)
@@ -52,7 +52,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | [C#](./CSharp/leetcodesln/SortColors.cs) | Medium | `Two Pointers` | O(n) | O(1) | 
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
 | 80 | :star: [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#](./leetcodesln/RemoveDuplicatesFromSortedArrayII.cs) | Medium | `Two Pointers` | O(n) | O(1) |
-| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./leetcodesln/MergeSortedArray.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./leetcodesln/MergeSortedArray.cs) [Go](Go/questions/MergeSortedArray.go) | Easy | `Two Pointers` | O(n) | O(1) |  
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C#](./leetcodesln/ValidPalindrome.cs) [Go](Go/questions/ValidPalindrome.go) | Easy | `Two Pointers` | O(n) | O(1) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./leetcodesln/LinkedListCycle.cs) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./leetcodesln/TwoSumII.cs) | Easy | `Two Pointers` | O(n) | O(1) |
@@ -113,7 +113,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | [C#](./leetcodesln/SortColors.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
 | 80 | :star: [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#](./leetcodesln/RemoveDuplicatesFromSortedArrayII.cs) | Medium | `Two Pointers` | O(n) | O(1) |
-| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./leetcodesln/MergeSortedArray.cs) | Easy | `Two Pointers` | O(n) | O(1) | 
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./leetcodesln/MergeSortedArray.cs) [Go](Go/questions/MergeSortedArray.go) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C#](./leetcodesln/ValidPalindrome.cs) [Go](Go/questions/ValidPalindrome.go) | Easy | `Two Pointers` | O(n) | O(1) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./leetcodesln/LinkedListCycle.cs) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./leetcodesln/TwoSumII.cs) | Easy | `Two Pointers` | O(n) | O(1) |
