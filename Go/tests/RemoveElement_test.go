@@ -12,4 +12,5 @@ func TestRemoveElement(t *testing.T) {
 	expected := 2
 	actual := re.RemoveElement(nums, val)
 	assert.Equal(t, expected, actual)
+
 }
