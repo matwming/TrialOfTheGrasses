@@ -9,7 +9,9 @@ func PlusOne(digits []int) []int {
 			return digits
 		}
 	}
-	var ans []int = make([]int, len(digits)+1)
-	ans[0] =1
+	//var ans []int = make([]int, len(digits)+1)
+	//ans[0] =1
+
+	ans := append([]int{1}, digits...)
 	return ans
 }

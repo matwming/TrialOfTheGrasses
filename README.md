@@ -62,7 +62,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C#](./leetcodesln/SummaryRanges.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(n) | 
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | [C#](./leetcodesln/MajorityElementII.cs) | Medium | `Array`, `Boyer-Moore Voting Algorithm` | O(n) | O(1) | 
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C#](./leetcodesln/ProductOfArrayExceptSelf.cs) | Medium | `Array`, `Prefix Caching` | O(n) | O(n) |
-| 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
+| 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) [Go](Go/questions/MoveZeroes.go) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
 | 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./leetcodesln/BullsAndCows.cs) | Easy | `HashTable` | O(n) | O(n) |
 | 344 | :white_check_mark:[Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](./leetcodesln/ReverseString.cs) | Easy | `Two Pointers` | O(n) | O(n) | 
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C#](./leetcodesln/ReverseVowelsOfAString.cs) | Easy | `Two Pointers` | O(n) | O(1) |
@@ -119,7 +119,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./leetcodesln/TwoSumII.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [C#](./leetcodesln/MinimumSizeSubarraySum.cs) | Medium | `Two Pointers`,`Sliding Window` | O(n) | O(1)|
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C#](./leetcodesln/SummaryRanges.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(n) | 
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
+| 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) [Go](Go/questions/MoveZeroes.go) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
 | 344 | :white_check_mark:[Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](./leetcodesln/ReverseString.cs) | Easy | `Two Pointers` | O(n) | O(n) | 
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C#](./leetcodesln/ReverseVowelsOfAString.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C#](./leetcodesln/IntersectionOfTwoArrayII.cs) | Easy | `Two Pointers` | O(n) | O(n) |
@@ -180,7 +180,7 @@ Prefix-caching can solve many subarray related problems.
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C#](./leetcodesln/SummaryRanges.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(n) | 
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | [C#](./leetcodesln/MajorityElementII.cs) | Medium | `Array`, `Boyer-Moore Voting Algorithm` | O(n) | O(1) | 
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C#](./leetcodesln/ProductOfArrayExceptSelf.cs) | Medium | `Array`, `Prefix Caching` | O(n) | O(n) |
-| 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
+| 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./leetcodesln/MoveZeroes.cs) [Go](Go/questions/MoveZeroes.go) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
 | 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [C#](./leetcodesln/FindAllDuplicatesInAnArray.cs) | Medium | `Two Pointers`, `Array` | O(n) | O(1) |
 | 950 | [Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [C#](./leetcodesln/RevealCardsInIncreasingOrder.cs) | Medium | `Array`, :star:`Queue` | O(n) | O(n) |
 | 985 | :star: [Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | [C#](./leetcodesln/SumOfEvenNumbersAfterQueries.cs) | Easy | `Array`, `Prefix Caching` | O(n) | O(n) |
