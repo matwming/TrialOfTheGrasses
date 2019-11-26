@@ -130,7 +130,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 457 | :star: [Circular Array Loop](https://leetcode.com/problems/circular-array-loop/) | [C#](./CSharp/leetcodesln/CircularArrayLoop.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 481 | [Magical String](https://leetcode.com/problems/magical-string/) | [C#](./CSharp/leetcodesln/MagicalString.cs) | Medium | `Two Pointers` | O(n) | O(n) | 
 | 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) | [C#](./CSharp/leetcodesln/LongestWordInDictionaryThroughDeleting.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
-| 532 | [K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | [C#](./CSharp/leetcodesln/K-DiffPairsInAnArray.cs) | Easy | `HashTable`, `Binary Search` | O(n), O(n) | O(n) ,O(1) | 
+| 532 | [K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | [C#](./CSharp/leetcodesln/K-DiffPairsInAnArray.cs) [Go](go/questions/KDiffPairsInAnArray.go) | Easy | `HashTable`, `Binary Search` | O(n), O(n) | O(n) ,O(1) | 
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [C#](./CSharp/leetcodesln/PermutationInString.cs) | Medium | `HashTable`, `Sliding Window`, `Two Pointers` | O(n) | O(n) | 
 | 611 | :question:[ValidTriangleNumber](https://leetcode.com/problems/valid-triangle-number/) | [C#](./CSharp/leetcodesln/ValidTriangleNumber.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 633 | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [C#](./CSharp/leetcodesln/SumOfSquareNumbers.cs) | Easy | `Two Pointers` | O(n) | O(1) |
