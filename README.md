@@ -63,7 +63,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | [C#](./CSharp/leetcodesln/MajorityElementII.cs) | Medium | `Array`, `Boyer-Moore Voting Algorithm` | O(n) | O(1) | 
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C#](./CSharp/leetcodesln/ProductOfArrayExceptSelf.cs) | Medium | `Array`, `Prefix Caching` | O(n) | O(n) |
 | 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./CSharp/leetcodesln/MoveZeroes.cs) [Go](Go/questions/MoveZeroes.go) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
-| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./CSharp/leetcodesln/BullsAndCows.cs) | Easy | `HashTable` | O(n) | O(n) |
+| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./CSharp/leetcodesln/BullsAndCows.cs) [Go](go/question/../questions/BullsAndCows.go) | Easy | `HashTable` | O(n) | O(n) |
 | 344 | :white_check_mark:[Reverse String](https://leetcode.com/problems/reverse-string/) | [C#](./CSharp/leetcodesln/ReverseString.cs) [Go](Go/questions/ReverseString.go) | Easy | `Two Pointers` | O(n) | O(n) | 
 | 345 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C#](./CSharp/leetcodesln/ReverseVowelsOfAString.cs) [Go](/Go/questions/ReverseVowelsOfAString.go) | Easy | `Two Pointers` | O(n) | O(1) |
 | 347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C#](./CSharp/leetcodesln/TopKFrequentElements.cs) | Medium | `Bucket Sort` | O(n) | O(n) |
@@ -200,7 +200,7 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C#](./CSharp/leetcodesln/TwoSum.cs) [Go](./Go/questions/TwoSum.go) | Easy | `Two Pointers`, `Hashtable` | O(n), O(n) | O(1), O(n) |
 | 36 | :star:[Valid Suduku](https://leetcode.com/problems/valid-sudoku/) | [C#](./CSharp/leetcodesln/ValidSudoku.cs) | Medium | `Hashtable` | O(81) | O(81*3) |
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./CSharp/leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
-| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./CSharp/leetcodesln/BullsAndCows.cs) | Easy | `HashTable` | O(n) | O(n) |
+| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C#](./CSharp/leetcodesln/BullsAndCows.cs) [Go](go/question/../questions/BullsAndCows.go) | Easy | `HashTable` | O(n) | O(n) |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [C#](./CSharp/leetcodesln/IntersectionOfTwoArrays.cs) [Go](./Go/tests/IntersectionOfTwoArrays_test.go) | Easy | `Two Pointers`, `HashSet` | O(n) | O(n) |
 | 438 | :star: [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [C#](./CSharp/leetcodesln/FindAllAnagramsInAString.cs) | Medium | `Two Pointers`, `Sliding Window`, `HashTable` | O(n) | O(1) |
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [C#](./CSharp/leetcodesln/PermutationInString.cs) | Medium | `HashTable`, `Sliding Window`, `Two Pointers` | O(n) | O(n) | 
