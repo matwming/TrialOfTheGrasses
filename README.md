@@ -38,6 +38,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 15| :star: [3Sum](https://leetcode.com/problems/3sum/) | [C#](./CSharp/leetcodesln/ThreeSum.cs) [Go](Go/questions/3Sum.go) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#](./CSharp/leetcodesln/ThreeSumClosest.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | [C#](./CSharp/leetcodesln/FourSum.cs) | Medium | `Binary Search`, `Two Pointers` | O(n^2 + n^3) | O(1) | 
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C#](CSharp/leetcodesln/SwapNodesInPairs.cs) [Go](Go/questions/SwapNodesInPairs.go) | Medium | `Recursion` | O(n) | O(n) | 
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | [C#](./CSharp/leetcodesln/RemoveElement.cs) [Go](./Go/questions/RemoveElement.go) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [C#](./CSharp/leetcodesln/ImplementStrStr.cs) | Easy | `Two Pointers`, :star:`KMP` | O(m*n) | O(1) | 
 | 33 | :star:[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C#](./CSharp/leetcodesln/SearchInRotatedSortedArray.cs) | Medium | `Binary Search` | O(Logn) | O(1) | 
