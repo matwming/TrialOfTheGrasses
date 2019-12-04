@@ -21,6 +21,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [Binary Search](#binary-search)
     - [Sortings](#sortings)
     - [Strings](#strings)
+    - [Linked List](#linked-list)
     - [Array & Matrix](#array--matrix)
     - [Stack](#stack)
     - [HashTable & HashSet](#hashtable--hashset)
@@ -53,6 +54,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 75 | :star: [Sort Colors](https://leetcode.com/problems/sort-colors/) | [C#](./CSharp/leetcodesln/SortColors.cs) | Medium | `Two Pointers` | O(n) | O(1) | 
 | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [C#](./CSharp/leetcodesln/MinimumWindowSubstring.cs) | Hard | `Sliding Window`, `HashTable` | O(n) | O(n) | 
 | 80 | :star: [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [C#](./CSharp/leetcodesln/RemoveDuplicatesFromSortedArrayII.cs) | Medium | `Two Pointers` | O(n) | O(1) |
+| 83 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [C#](CSharp/leetcodesln/RemoveDuplicatesFromSortedList.cs) [Go](Go/questions/RemoveDuplicatesFromSortedList.go) | Easy | `Linked List` `Recursion` | O(n) | O(n) |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./CSharp/leetcodesln/MergeSortedArray.cs) [Go](Go/questions/MergeSortedArray.go) | Easy | `Two Pointers` | O(n) | O(1) |  
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C#](./CSharp/leetcodesln/ValidPalindrome.cs) [Go](Go/questions/ValidPalindrome.go) | Easy | `Two Pointers` | O(n) | O(1) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./CSharp/leetcodesln/LinkedListCycle.cs) [Go](Go/questions/LinkedListCycle.go) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
@@ -170,6 +172,15 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 6 | :star:[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C#](./CSharp/leetcodesln/ZigZagConversion.cs) | Medium | `String` | O(n), O(n) | O(n), O(n) |
 | 14 | :star:[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [C#](./CSharp/leetcodesln/LongestCommonPrefix.cs) | Easy | `String` | O(m*n) | O(1)|
 | 1221 | :white_check_mark:[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | [C#](./CSharp/leetcodesln/SplitAStringInBalancedStrings.cs) | Easy | `Stack`, `Greedy` | O(n) | O(n)| 
+
+
+### Linked List
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Go](Go/questions/ReverseLinkedList.go) | Easy | `Recursion` `Linked List` | O(n) | O(n) | 
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C#](CSharp/leetcodesln/SwapNodesInPairs.cs) [Go](Go/questions/SwapNodesInPairs.go) | Medium | `Recursion` | O(n) | O(n) |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./CSharp/leetcodesln/LinkedListCycle.cs) [Go](Go/questions/LinkedListCycle.go) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
+| 83 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [C#](CSharp/leetcodesln/RemoveDuplicatesFromSortedList.cs) [Go](Go/questions/RemoveDuplicatesFromSortedList.go) | Easy | `Linked List` `Recursion` | O(n) | O(n) |
 
 ### Array & Matrix
 Prefix-caching can solve many subarray related problems.
