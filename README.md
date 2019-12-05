@@ -60,6 +60,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./CSharp/leetcodesln/LinkedListCycle.cs) [Go](Go/questions/LinkedListCycle.go) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./CSharp/leetcodesln/TwoSumII.cs) [Go](Go/questions/TwoSumII.go) | Easy | `Two Pointers` | O(n) | O(1) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [C#](./CSharp/leetcodesln/MajorityElement.cs) [Go](Go/questions/MajorityElement.go)| Easy | `Array`, `Boyer-Moore Voting Algorithm`, `Bit Manipulation` | O(n) | O(1) | 
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Go](./Go/questions/RotateArray.go) | Easy | `Two Pointers`, `Array` | O(n), O(n) | O(n)  O(1) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Go](Go/questions/ReverseLinkedList.go) | Easy | `Recursion` | O(n) | O(n) | 
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [C#](./CSharp/leetcodesln/MinimumSizeSubarraySum.cs) | Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1)|
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [C#](./CSharp/leetcodesln/KthLargestElementInAnArray.cs) | Medium | `Sorting`, `Priority Queue` | O(NLogK) | O(1) |
@@ -121,6 +122,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C#](./CSharp/leetcodesln/ValidPalindrome.cs) [Go](Go/questions/ValidPalindrome.go) | Easy | `Two Pointers` | O(n) | O(1) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [C#](./CSharp/leetcodesln/LinkedListCycle.cs) [Go](Go/questions/LinkedListCycle.go) | Easy | `Two Pointers`, `HashTable` | O(n) | O(1) |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [C#](./CSharp/leetcodesln/TwoSumII.cs) [Go](Go/questions/TwoSumII.go) | Easy | `Two Pointers` | O(n) | O(1) |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Go](./Go/questions/RotateArray.go) | Easy | `Two Pointers`, `Array` | O(n), O(n) | O(n)  O(1) |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [C#](./CSharp/leetcodesln/MinimumSizeSubarraySum.cs) | Medium | `Two Pointers`,`Sliding Window` | O(n) | O(1)|
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C#](./CSharp/leetcodesln/SummaryRanges.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(n) | 
 | 283 | :star:[Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [C#](./CSharp/leetcodesln/MoveZeroes.cs) [Go](Go/questions/MoveZeroes.go) | Easy | `Two Pointers`, `Array` | O(n) | O(1) |
@@ -190,6 +192,7 @@ Prefix-caching can solve many subarray related problems.
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [C#](./CSharp/leetcodesln/RotateImage.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(1) | 
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [C#](./CSharp/leetcodesln/PlusOne.cs) [Go](./Go/questions/PlusOne.go) | Easy | `Array` | O(n) | O(1) | 
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [C#](./CSharp/leetcodesln/MajorityElement.cs) [Go](Go/questions/MajorityElement.go)| Easy | `Array`, `Boyer-Moore Voting Algorithm`, `Bit Manipulation` | O(n) | O(1) | 
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Go](./Go/questions/RotateArray.go) | Easy | `Two Pointers`, `Array` | O(n), O(n) | O(n)  O(1) |
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [C#](./CSharp/leetcodesln/SummaryRanges.cs) | Medium | `Array`, `Two Pointers` | O(n) | O(n) | 
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | [C#](./CSharp/leetcodesln/MajorityElementII.cs) | Medium | `Array`, `Boyer-Moore Voting Algorithm` | O(n) | O(1) | 
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C#](./CSharp/leetcodesln/ProductOfArrayExceptSelf.cs) | Medium | `Array`, `Prefix Caching` | O(n) | O(n) |
