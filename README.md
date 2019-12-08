@@ -27,6 +27,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [HashTable & HashSet](#hashtable--hashset)
     - [Dynamic Programming](#dynamic-programming)
     - [Backtracking](#backtracking)
+    - [Math](#math)
 
 ## Questions list
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
@@ -239,3 +240,8 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 39 | :star: [Combination Sum](https://leetcode.com/problems/combination-sum/) | [C#](./CSharp/leetcodesln/CombinationSum.cs) | Medium | `Backtracking` | O(2^n) | O(n) |
+
+### Math
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 1282 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | [C#](CSharp/leetcodesln/SubtractTheProductAndSumOfDigitOfAnInteger.cs) [Go](Go/questions/SubtractTheProductAndSumOfDigitOfAnInteger.go) | Easy | `Math` | O(n) | O(1) |
