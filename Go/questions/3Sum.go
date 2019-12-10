@@ -3,7 +3,7 @@ package questions
 import "sort"
 
 func ThreeSum(nums []int) [][]int{
-	ans := [][]int{}
+	var ans [][]int
 
 	sort.Ints(nums)
 

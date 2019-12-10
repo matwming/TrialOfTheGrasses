@@ -22,12 +22,13 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [Sortings](#sortings)
     - [Strings](#strings)
     - [Linked List](#linked-list)
-    - [Array & Matrix](#array--matrix)
+    - [Array &amp; Matrix](#array-amp-matrix)
     - [Stack](#stack)
-    - [HashTable & HashSet](#hashtable--hashset)
+    - [HashTable &amp; HashSet](#hashtable-amp-hashset)
     - [Dynamic Programming](#dynamic-programming)
     - [Backtracking](#backtracking)
     - [Math](#math)
+    - [Greedy](#greedy)
 
 ## Questions list
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
@@ -229,6 +230,7 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [C#](./CSharp/leetcodesln/PermutationInString.cs) | Medium | `HashTable`, `Sliding Window`, `Two Pointers` | O(n) | O(n) | 
 | 961 | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | [C#](./CSharp/leetcodesln/N-RepeatedElementInSize2NArray.cs) [Go](Go/questions/N_RepestedElementInSize2NArray.go) | Easy | `Hashtable`, `Array` | O(n) | O(n) |
 | 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C#](./CSharp/leetcodesln/FindCommonCharacters.cs) | Easy | `Array`, `HashTable` | O(26*26) | O(n) |
+| 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C#](CSharp/leetcodesln/GroupThePeopleGivenTheGroupSizeTheyBelongTo.cs) | Medium | `Greedy` `Hashtable` | O(n) | O(n) |
 
 ### Dynamic Programming
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
@@ -245,3 +247,8 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 1282 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | [C#](CSharp/leetcodesln/SubtractTheProductAndSumOfDigitOfAnInteger.cs) [Go](Go/questions/SubtractTheProductAndSumOfDigitOfAnInteger.go) | Easy | `Math` | O(n) | O(1) |
+
+### Greedy
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C#](CSharp/leetcodesln/GroupThePeopleGivenTheGroupSizeTheyBelongTo.cs) | Medium | `Greedy` `Hashtable` | O(n) | O(n) |
