@@ -1,11 +1,20 @@
 package questions
 
 func GroupThePeople(groupSizes []int) [][]int {
-	var ans [][]int
+	ans := make([][]int, 0)
 
-	var m map[int][]int
+	m := make(map[int][]int)
 
 	for i, v := range groupSizes {
-		
+		if val, ok := m[v]; ok {
+			val = append(val, i)
+		} else {
+			m[v] = append(m[v], i)
+		}
+		if len(m[v]) == v {
+			ans = append(ans, m[v])
+			m[v] = []int{}
+		}
 	}
+	return ans
 }
