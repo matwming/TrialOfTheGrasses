@@ -6,8 +6,8 @@ func GroupThePeople(groupSizes []int) [][]int {
 	m := make(map[int][]int)
 
 	for i, v := range groupSizes {
-		if val, ok := m[v]; ok {
-			val = append(val, i)
+		if _, ok := m[v]; ok {
+			m[v] = append(m[v], i)
 		} else {
 			m[v] = append(m[v], i)
 		}

@@ -246,9 +246,9 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 ### Math
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
-| 1282 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | [C#](CSharp/leetcodesln/SubtractTheProductAndSumOfDigitOfAnInteger.cs) [Go](Go/questions/SubtractTheProductAndSumOfDigitOfAnInteger.go) | Easy | `Math` | O(n) | O(1) |
+| 1281 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | [C#](CSharp/leetcodesln/SubtractTheProductAndSumOfDigitOfAnInteger.cs) [Go](Go/questions/SubtractTheProductAndSumOfDigitOfAnInteger.go) | Easy | `Math` | O(n) | O(1) 
 
 ### Greedy
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
-| 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C#](CSharp/leetcodesln/GroupThePeopleGivenTheGroupSizeTheyBelongTo.cs) | Medium | `Greedy` `Hashtable` | O(n) | O(n) |
+| 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C#](CSharp/leetcodesln/GroupThePeopleGivenTheGroupSizeTheyBelongTo.cs) [Go](/Go/questions/SubtractTheProductAndSumOfDigitOfAnInteger.go) | Medium | `Greedy` `Hashtable` | O(n) | O(n) |
