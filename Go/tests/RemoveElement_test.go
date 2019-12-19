@@ -2,7 +2,7 @@ package tests
 
 import (
 	"gotest.tools/assert"
-	re "m/v2/questions"
+	re "github.com/leetcode/questions"
 	"testing"
 )
 
