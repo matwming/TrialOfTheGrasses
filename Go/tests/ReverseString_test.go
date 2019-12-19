@@ -3,7 +3,7 @@ package tests
 import (
 	"bytes"
 	"gotest.tools/assert"
-	"m/v2/questions"
+	"github.com/leetcode/questions"
 	"testing"
 )
 
