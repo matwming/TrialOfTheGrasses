@@ -1,6 +1,6 @@
 package questions
 
-import "m/v2/common"
+import "github.com/leetcode/common"
 
 func HasCycle(head *common.ListNode) bool {
 	if head == nil {

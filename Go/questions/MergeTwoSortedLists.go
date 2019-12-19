@@ -1,6 +1,6 @@
 package questions
 
-import "m/v2/common"
+import "github.com/leetcode/common"
 
 func MergeTwoLists(l1 *common.ListNode, l2 *common.ListNode) *common.ListNode {
 	if l1 == nil {
