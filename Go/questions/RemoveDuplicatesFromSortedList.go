@@ -1,6 +1,6 @@
 package questions
 
-import "m/v2/common"
+import "github.com/leetcode/common"
 
 func DeleteDuplicates(head *common.ListNode) *common.ListNode {
 	if head == nil || head.Next == nil {
