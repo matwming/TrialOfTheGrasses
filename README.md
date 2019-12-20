@@ -148,7 +148,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [C#](./CSharp/leetcodesln/ValidPalindromeII.cs) [Go](Go/questions/ValidPalindromeII.go) | Easy | `Two Pointers` | O(n) | O(1) | 
 | 713 | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [C#](./CSharp/leetcodesln/SubarrayProductLessThanK.cs) | Medium | `Two Pointers` | O(n) | O(1) |
 | 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [C#](./CSharp/leetcodesln/PartitionLabels.cs) | Medium | `Greedy`, `Sliding Window` | O(n) | O(26) | 
-| 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C#](./CSharp/leetcodesln/BackspaceStringCompare.cs) | Easy | `Stack`, :star:`Two Pointers` | O(n) | O(1) | 
+| 844 | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | [C#](./CSharp/leetcodesln/BackspaceStringCompare.cs) [Go](./Go/questions/BackspaceStringCompare.go) | Easy | `Stack`, :star:`Two Pointers` | O(n) | O(1) | 
 | 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [C#](./CSharp/leetcodesln/FruitIntoBaskets.cs) | Medium | `Two Pointers` | O(n) | O(2) |
 | 925 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/) | [C#](./CSharp/leetcodesln/LongPressedName.cs) | Easy | `Two Pointers` | O(n) | O(1) |
 |977 | :white_check_mark:[Squares Of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [C#](./CSharp/leetcodesln/SquaresOfASortedArray.cs) | Easy | `Two Pointers` | O(n) | O(n) |
