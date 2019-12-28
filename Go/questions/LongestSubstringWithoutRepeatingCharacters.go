@@ -1,5 +1,7 @@
 package questions
 
+import "github.com/leetcode/common"
+
 func LengthOfLongestSubstring(s string) int {
 	var ans int
 	m := make(map[uint8]int)
@@ -24,7 +26,7 @@ func LengthOfLongestSubstring(s string) int {
 			l++
 		}
 		r++
-		ans = max(ans, r-l)
+		ans = common.Max(ans, r-l)
 	}
 	return ans
 }
