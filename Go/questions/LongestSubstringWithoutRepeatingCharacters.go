@@ -1,6 +1,6 @@
 package questions
 
-import "github.com/leetcode/common"
+import . "github.com/leetcode/common"
 
 func LengthOfLongestSubstring(s string) int {
 	var ans int
@@ -26,7 +26,7 @@ func LengthOfLongestSubstring(s string) int {
 			l++
 		}
 		r++
-		ans = common.Max(ans, r-l)
+		ans = Max(ans, r-l)
 	}
 	return ans
 }

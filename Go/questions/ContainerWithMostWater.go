@@ -1,11 +1,12 @@
 package questions
 
+import . "github.com/leetcode/common"
 func MaxArea(height []int) int {
 	ans, l , r := 0, 0, len(height)-1
 
 	for l < r {
-		cur := (r -l) * min(height[l],height[r])
-		ans = max(ans, cur)
+		cur := (r -l) * Min(height[l],height[r])
+		ans = Max(ans, cur)
 		if height[l] < height[r] {
 			l++
 		} else {
@@ -13,20 +14,4 @@ func MaxArea(height []int) int {
 		}
 	}
 	return ans
-}
-
-func min(a int, b int) int {
-	if a < b {
-		return a
-	} else {
-		return b
-	}
-}
-
-func max(a int, b int) int {
-	if a > b {
-		return a
-	} else {
-		return b
-	}
 }

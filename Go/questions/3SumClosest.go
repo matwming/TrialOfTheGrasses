@@ -1,7 +1,7 @@
 package questions
 
 import (
-	"github.com/leetcode/common"
+	. "github.com/leetcode/common"
 	"sort"
 )
 
@@ -32,7 +32,7 @@ func ThreeSumClosest(nums []int, target int) int {
 			} else {
 				return sum
 			}
-			if common.Abs(target - sum) < common.Abs(target - closeset) {
+			if Abs(target - sum) < Abs(target - closeset) {
 				closeset = sum
 			}
 		}
