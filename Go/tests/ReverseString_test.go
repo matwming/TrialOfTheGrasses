@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestReverString(t *testing.T) {
+func TestReverseString(t *testing.T) {
 	s := []byte{'h','e','l','l','o'}
 	expected :=[]byte{'o','l','l','e','h'}
 	questions.ReverseString(s)

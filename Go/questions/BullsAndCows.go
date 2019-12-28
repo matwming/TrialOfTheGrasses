@@ -17,8 +17,8 @@ func GetHint(secret string, guess string) string {
 		} else {
 			r1int,_ := strconv.Atoi(string(r1[i]))
 			r2int,_ := strconv.Atoi(string(r2[i]))
-			if(numbers[r1int] < 0) {cows++}
-			if(numbers[r2int] > 0) {cows++}
+			if numbers[r1int] < 0 {cows++}
+			if numbers[r2int] > 0 {cows++}
 			numbers[r1int]++
 			numbers[r2int]--
 		}

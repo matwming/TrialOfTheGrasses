@@ -1,7 +1,7 @@
 package questions
 
 func Intersect(nums1 []int, nums2 []int) []int {
-	ans := []int{}
+	var ans []int
 
 	m := map[int]int{}
 
