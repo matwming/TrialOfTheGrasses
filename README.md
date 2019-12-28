@@ -111,7 +111,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 ### Two Pointers
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
-| 3 | :star: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C#](./CSharp/leetcodesln/LongestSubstringWithoutRepeatingCharacters.cs) | Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1) |
+| 3 | :star: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C#](./CSharp/leetcodesln/LongestSubstringWithoutRepeatingCharacters.cs) [Go](Go/questions/LongestSubstringWithoutRepeatingCharacters.go)| Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1) |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [C#](./CSharp/leetcodesln/ContainerWithMostWater.cs) [Go](Go/questions/ContainerWithMostWater.go) | Medium | `Two Pointers` | O(n) | O(1) |
 | 15| [3Sum](https://leetcode.com/problems/3sum/) | [C#](./CSharp/leetcodesln/ThreeSum.cs) [Go](Go/questions/3Sum.go) | Medium | `Two Pointers` | O(n^2) | O(1) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [C#](./CSharp/leetcodesln/ThreeSumClosest.cs) | Medium | `Two Pointers` | O(n^2) | O(1) |
