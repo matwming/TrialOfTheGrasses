@@ -29,6 +29,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [Backtracking](#backtracking)
     - [Math](#math)
     - [Greedy](#greedy)
+    - [Math](#math-1)
 
 ## Questions list
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
@@ -36,6 +37,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C#](./CSharp/leetcodesln/TwoSum.cs) [Go](./Go/questions/TwoSum.go) | Easy | `Hashtable` | O(n) | O(n)| 
 | 3 | :star: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C#](./CSharp/leetcodesln/LongestSubstringWithoutRepeatingCharacters.cs) | Medium | `Two Pointers`, `Sliding Window` | O(n) | O(1) |
 | 6 | :star:[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C#](./CSharp/leetcodesln/ZigZagConversion.cs) | Medium | `String` | O(n), O(n) | O(n), O(n) |
+| 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Go](./Go/questions/ReverseInteger.go) | Easy | `Math` |  O(n) | O(n) | 
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [C#](./CSharp/leetcodesln/ContainerWithMostWater.cs) [Go](Go/questions/ContainerWithMostWater.go) | Medium | `Two Pointers` | O(n) | O(1) |
 | 14 | :star:[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [C#](./CSharp/leetcodesln/LongestCommonPrefix.cs) | Easy | `String` | O(m*n) | O(1)| 
 | 15| [3Sum](https://leetcode.com/problems/3sum/) | [C#](./CSharp/leetcodesln/ThreeSum.cs) [Go](Go/questions/3Sum.go) | Medium | `Two Pointers` | O(n^2) | O(1) |
@@ -254,3 +256,9 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 1282 | [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [C#](CSharp/leetcodesln/GroupThePeopleGivenTheGroupSizeTheyBelongTo.cs) [Go](/Go/questions/SubtractTheProductAndSumOfDigitOfAnInteger.go) | Medium | `Greedy` `Hashtable` | O(n) | O(n) |
+
+
+### Math
+| # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
+|---|----|--------|--------|----|-----|------|
+| 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Go](./Go/questions/ReverseInteger.go) | Easy | `Math` |  O(n) | O(n) | 
