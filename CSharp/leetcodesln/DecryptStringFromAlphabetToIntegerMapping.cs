@@ -8,57 +8,23 @@ namespace leetcodesln
     {
         public string FreqAlphabets(string s)
         {
-            var map = new Dictionary<string, char>
-            {
-                {"1" , 'a'},
-                {"2" , 'b'},
-                {"3" , 'c'},
-                {"4" , 'd'},
-                {"5" , 'e'},
-                {"6" , 'f'},
-                {"7" , 'g'},
-                {"8" , 'h'},
-                {"9" , 'i'},
-                {"10#" , 'j'},
-                {"11#" , 'k'},
-                {"12#" , 'l'},
-                {"13#" , 'm'},
-                {"14#" , 'n'},
-                {"15#" , 'o'},
-                {"16#" , 'p'},
-                {"17#" , 'q'},
-                {"18#" , 'r'},
-                {"19#" , 's'},
-                {"20#" , 't'},
-                {"21#" , 'u'},
-                {"22#" , 'v'},
-                {"23#" , 'w'},
-                {"24#" , 'x'},
-                {"25#" , 'y'},
-                {"26#" , 'z'},
+            var ans = new StringBuilder();
+            var start = 0;
 
-            };
-
-            var sb = new StringBuilder();
-            var len = s.Length - 1;
-            while (len >= 0)
+            while (start < s.Length)
             {
-                if (s[len] == '#')
+                if(start + 2 < s.Length && s[start+2] == '#')
                 {
-                    len -= 2;
-                    sb.Append(map[s.Substring(len, 3)]);
-                    len--;
+                    var num = int.Parse(s.Substring(start,2));
+                    ans.Append(((char)('a'+num -1)).ToString());
+                    start += 3;
                 }
-                else
+                else 
                 {
-                    var idx = s.Substring(len--, 1);
-                    sb.Append(map[idx]);
-
+                    ans.Append(((char)('a' + s[start++] - '0'-1)).ToString());
                 }
             }
-            var chararr = sb.ToString().ToCharArray();
-            Array.Reverse(chararr);
-            return new string(chararr);
+            return ans.ToString();
         }
     }
 }
