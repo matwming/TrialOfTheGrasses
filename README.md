@@ -109,6 +109,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 1222| :star:[Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | [C#](./CSharp/leetcodesln/QueensThatCanAttackTheKing.cs) | Medium | `Array` | O(1) | O(64) |
 | 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C#](CSharp/leetcodesln/FindNUniqueIntegersSumUpToZero.cs) [Go](Go/questions/FindNUniqueIntegersSumUpToZero.go) | Easy | `Array` | O(n) | O(n) |
 | 1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | [C#](./CSharp/leetcodesln/DecryptStringFromAlphabetToIntegerMapping.cs) [Go](Go/questions/DecryptStringFromAlphabetToIntegerMapping.go) | Easy | `Strings` | O(n) | O(n) |
+| 1310 |[XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/) | [C#](CSharp/leetcodesln/XORQueriesOfASubarray.cs) [Go](Go/questions/XORQueriesOfASubarray.go) | Medium | `Arrays` `Bit Manipulation` | O(n) | O(n) |
 
 ## Algorithms
 
@@ -216,6 +217,7 @@ Prefix-caching can solve many subarray related problems.
 | 1002 | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | [C#](./CSharp/leetcodesln/FindCommonCharacters.cs) | Easy | `Array`, `HashTable` | O(26*26) | O(n) |
 | 1222| :star:[Queens That Can Attack the King](https://leetcode.com/problems/queens-that-can-attack-the-king/) | [C#](./CSharp/leetcodesln/QueensThatCanAttackTheKing.cs) | Medium | `Array` | O(1) | O(64) |
 | 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C#](CSharp/leetcodesln/FindNUniqueIntegersSumUpToZero.cs) [Go](Go/questions/FindNUniqueIntegersSumUpToZero.go) | Easy | `Array` | O(n) | O(n) |
+| 1310 |[XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/) | [C#](CSharp/leetcodesln/XORQueriesOfASubarray.cs) [Go](Go/questions/XORQueriesOfASubarray.go) | Medium | `Arrays` `Bit Manipulation` | O(n) | O(n) |
 
 ### Stack
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
