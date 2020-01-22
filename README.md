@@ -22,9 +22,9 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
     - [Sortings](#sortings)
     - [Strings](#strings)
     - [Linked List](#linked-list)
-    - [Array &amp; Matrix](#array-amp-matrix)
+    - [Array & Matrix](#array--matrix)
     - [Stack](#stack)
-    - [HashTable &amp; HashSet](#hashtable-amp-hashset)
+    - [HashTable & HashSet](#hashtable--hashset)
     - [Dynamic Programming](#dynamic-programming)
     - [Backtracking](#backtracking)
     - [Math](#math)
@@ -111,7 +111,7 @@ Finally, came the seventh day. The male awoke and opened his eyes, and his eyes 
 | 1304 | [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | [C#](CSharp/leetcodesln/FindNUniqueIntegersSumUpToZero.cs) [Go](Go/questions/FindNUniqueIntegersSumUpToZero.go) | Easy | `Array` | O(n) | O(n) |
 | 1309 | [Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | [C#](./CSharp/leetcodesln/DecryptStringFromAlphabetToIntegerMapping.cs) [Go](Go/questions/DecryptStringFromAlphabetToIntegerMapping.go) | Easy | `Strings` | O(n) | O(n) |
 | 1310 |[XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/) | [C#](CSharp/leetcodesln/XORQueriesOfASubarray.cs) [Go](Go/questions/XORQueriesOfASubarray.go) | Medium | `Arrays` `Bit Manipulation` | O(n) | O(n) |
-| 1317 | [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | [C#](CSharp/leetcodesln/ConvertIntegerToTheSumOfTwoNo-ZeroIntegers.cs) | Easy | `Math` | O(n) | O(1) |
+| 1317 | [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | [C#](CSharp/leetcodesln/ConvertIntegerToTheSumOfTwoNo-ZeroIntegers.cs) [Go](Go/questions/ConvertIntegerToTheSumOfTwoNo-ZeroIntegers.go) | Easy | `Math` | O(n) | O(1) |
 | 1318 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | [C#](CSharp/leetcodesln/MinimumFilpsToMakeAORBEqualToC.cs) | Medium | `Bit Manipulation` | O(n) | O(1) | 
 
 
@@ -270,7 +270,7 @@ Hashtable has O(1) read/write, hashtable are often used to save preprocessed res
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
 |---|----|--------|--------|----|-----|------|
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Go](./Go/questions/ReverseInteger.go) | Easy | `Math` |  O(n) | O(n) | 
-| 1317 | [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | [C#](CSharp/leetcodesln/ConvertIntegerToTheSumOfTwoNo-ZeroIntegers.cs) | Easy | `Math` | O(n) | O(1) | 
+| 1317 | [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | [C#](CSharp/leetcodesln/ConvertIntegerToTheSumOfTwoNo-ZeroIntegers.cs) [Go](Go/questions/ConvertIntegerToTheSumOfTwoNo-ZeroIntegers.go) | Easy | `Math` | O(n) | O(1) |
 
 ### Bit Manipulation
 | # | Question | Solution | Difficulty | Tag | Time Complexity | Space Complexity | 
