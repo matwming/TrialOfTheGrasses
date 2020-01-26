@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"gotest.tools/assert"
 	"github.com/leetcode/questions"
+	"gotest.tools/assert"
 	"testing"
 )
 

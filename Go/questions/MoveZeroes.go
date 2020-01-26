@@ -1,7 +1,7 @@
 package questions
 
 func MoveZeroes(nums []int) {
-	left, right := 0,0
+	left, right := 0, 0
 
 	for right < len(nums) {
 		if nums[right] != 0 {

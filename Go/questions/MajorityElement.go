@@ -10,7 +10,7 @@ func MajorityElement(nums []int) int {
 			counter--
 			if counter <= 0 {
 				maj = nums[i]
-				counter =1
+				counter = 1
 			}
 		}
 	}

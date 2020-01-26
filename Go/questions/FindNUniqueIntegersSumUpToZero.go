@@ -5,15 +5,15 @@ func SumZero(n int) []int {
 		return []int{0}
 	}
 
-	ans := make([]int, 0,n)
+	ans := make([]int, 0, n)
 
-	if n % 2 == 1{
+	if n%2 == 1 {
 		ans = append(ans, 0)
 	}
 
-	for i:= 1; i < n/2 +1; i++ {
-		ans = append(ans, 1 * i)
-		ans = append(ans, -1 * i)
+	for i := 1; i < n/2+1; i++ {
+		ans = append(ans, 1*i)
+		ans = append(ans, -1*i)
 	}
 	return ans
 }

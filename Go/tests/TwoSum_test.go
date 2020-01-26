@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"gotest.tools/assert"
 	"github.com/leetcode/questions"
+	"gotest.tools/assert"
 	"testing"
 )
 
@@ -11,7 +11,7 @@ func TestTwoSum(t *testing.T) {
 	target := 9
 	expected := []int{1, 0}
 	actual := questions.TwoSum(nums, target)
-	for i := 0; i < len(expected);i++  {
+	for i := 0; i < len(expected); i++ {
 		assert.Equal(t, expected[i], actual[i])
 	}
 }

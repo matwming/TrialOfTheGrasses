@@ -5,15 +5,15 @@ func Intersect(nums1 []int, nums2 []int) []int {
 
 	m := map[int]int{}
 
-	for _, v:= range nums1 {
-		if _, ok := m[v]; ok{
+	for _, v := range nums1 {
+		if _, ok := m[v]; ok {
 			m[v] += 1
 		} else {
 			m[v] = 1
 		}
 	}
 
-	for _,v:= range nums2 {
+	for _, v := range nums2 {
 		if _, ok := m[v]; ok {
 			ans = append(ans, v)
 			m[v]--

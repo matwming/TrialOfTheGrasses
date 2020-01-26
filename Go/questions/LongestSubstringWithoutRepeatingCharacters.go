@@ -6,10 +6,10 @@ func LengthOfLongestSubstring(s string) int {
 	var ans int
 	m := make(map[uint8]int)
 
-	count, l , r := 0, 0, 0
+	count, l, r := 0, 0, 0
 
 	for r < len(s) {
-		if _,yes := m[s[r]]; yes {
+		if _, yes := m[s[r]]; yes {
 			m[s[r]]++
 		} else {
 			m[s[r]] = 1
@@ -30,5 +30,3 @@ func LengthOfLongestSubstring(s string) int {
 	}
 	return ans
 }
-
-

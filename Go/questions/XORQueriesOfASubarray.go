@@ -10,7 +10,7 @@ func XorQueries(arr []int, queries [][]int) []int {
 
 	for i := 0; i < len(queries); i++ {
 		l := queries[i][0]
-		r:= queries[i][1]
+		r := queries[i][1]
 		ans[i] = preTable[r+1] ^ preTable[l]
 	}
 	return ans

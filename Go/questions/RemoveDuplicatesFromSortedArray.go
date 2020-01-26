@@ -8,7 +8,7 @@ func RemoveDuplicates(nums []int) int {
 		return 1
 	}
 
-	cur, sorted := 1,0
+	cur, sorted := 1, 0
 
 	for cur < n {
 		if nums[cur] == nums[sorted] {
@@ -19,5 +19,5 @@ func RemoveDuplicates(nums []int) int {
 			cur++
 		}
 	}
-	return sorted+1
+	return sorted + 1
 }

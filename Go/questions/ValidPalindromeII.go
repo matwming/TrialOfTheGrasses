@@ -9,7 +9,7 @@ func ValidPalindromeII(s string) bool {
 			l++
 			r--
 		} else {
-			return isPalindrome(re[l+1:r+1]) || isPalindrome(re[l: r])
+			return isPalindrome(re[l+1:r+1]) || isPalindrome(re[l:r])
 		}
 	}
 	return true

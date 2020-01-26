@@ -10,12 +10,12 @@ func TestLengthOfLongestSubstring1(t *testing.T) {
 	input := "abcabcbb"
 	expected := 3
 	actual := questions.LengthOfLongestSubstring(input)
-	assert.Equal(t, expected,actual)
+	assert.Equal(t, expected, actual)
 }
 
 func TestLengthOfLongestSubstring2(t *testing.T) {
 	input := "bbbbbb"
 	expected := 1
 	actual := questions.LengthOfLongestSubstring(input)
-	assert.Equal(t, expected,actual)
+	assert.Equal(t, expected, actual)
 }

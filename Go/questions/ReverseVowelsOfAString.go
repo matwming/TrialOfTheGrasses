@@ -2,12 +2,12 @@ package questions
 
 func ReverseVowels(s string) string {
 	srune := []rune(s)
-	vowels := map[rune]bool{'a':true,'e':true, 'i':true, 'o':true,'u':true, 'A':true, 'E': true, 'I': true, 'O': true, 'U': true}
+	vowels := map[rune]bool{'a': true, 'e': true, 'i': true, 'o': true, 'u': true, 'A': true, 'E': true, 'I': true, 'O': true, 'U': true}
 
 	left, right := 0, len(s)-1
 	for left < right {
 		for {
-			_,lok := vowels[srune[left]]
+			_, lok := vowels[srune[left]]
 			if left < right && !lok {
 				left++
 			} else {
@@ -15,7 +15,7 @@ func ReverseVowels(s string) string {
 			}
 		}
 		for {
-			_,rok := vowels[srune[right]]
+			_, rok := vowels[srune[right]]
 			if left < right && !rok {
 				right--
 			} else {

@@ -6,7 +6,7 @@ func Rotate(nums []int, k int) {
 	res := make([]int, n)
 
 	for i, v := range nums {
-		res[(i + k) % n] = v
+		res[(i+k)%n] = v
 	}
 	copy(nums, res)
 }
@@ -15,7 +15,7 @@ func Rotate(nums []int, k int) {
 func RotateInPlace(nums []int, k int) {
 	n := k % len(nums)
 	reverse(nums, 0, len(nums)-1)
-	reverse(nums,0, n-1)
+	reverse(nums, 0, n-1)
 	reverse(nums, n, len(nums)-1)
 }
 

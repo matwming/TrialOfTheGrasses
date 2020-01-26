@@ -3,7 +3,7 @@ package questions
 func SubtractProductAndSum(n int) int {
 	sum, prod := 0, 1
 
-	for n!= 0 {
+	for n != 0 {
 		digit := n % 10
 		sum += digit
 		prod *= digit

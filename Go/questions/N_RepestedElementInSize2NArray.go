@@ -3,9 +3,9 @@ package questions
 func RepeatedNTimes(A []int) int {
 	m := make(map[int]int)
 
-	n := len(A)/2
-	for _,val := range A {
-		if _,ok := m[val]; ok {
+	n := len(A) / 2
+	for _, val := range A {
+		if _, ok := m[val]; ok {
 			m[val]++
 			if m[val] >= n {
 				return val
